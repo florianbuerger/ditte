@@ -19,6 +19,8 @@
     if (self) {
         _tweets = [[NSMutableArray alloc] init];
     }
+
+    return self;
 }
 
 - (CLLocationCoordinate2D)coordinate {

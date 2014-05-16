@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @import MapKit;
 
-@interface DITTweet : NSObject
+@interface DITTweet : NSObject <MKAnnotation>
 
-@property CLLocation *location;
+@property(nonatomic, copy, readonly) CLLocation *location;
+@property(nonatomic, copy, readonly) NSString *username;
+@property(nonatomic, copy, readonly) NSString *userFirstName;
+@property(nonatomic, copy, readonly) NSString *userLastName;
 
 @end

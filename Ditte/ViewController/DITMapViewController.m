@@ -8,9 +8,11 @@
 
 #import "DITMapViewController.h"
 #import "DITTwitterSearcher.h"
+#import "DITTweet.h"
 #import <AKLocationManager/AKLocationManager.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
+static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIdentifier";
 
 @interface DITMapViewController () <MKMapViewDelegate, UITextFieldDelegate>
 @property MKMapView *mapView;
@@ -87,7 +89,13 @@
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    return nil;
+    DITTweet *tweet = nil;
+    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:DITAnnotationViewIdentifier];
+    if (!annotationView) {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:tweet reuseIdentifier:DITAnnotationViewIdentifier];
+    }
+    annotationView.annotation = tweet;
+    return annotationView;
 }
 
 #pragma mark - Setup

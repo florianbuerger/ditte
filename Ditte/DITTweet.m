@@ -10,4 +10,16 @@
 
 @implementation DITTweet
 
+- (CLLocationCoordinate2D)coordinate {
+    return self.location.coordinate;
+}
+
+- (NSString *)title {
+    return [[self.userFirstName stringByAppendingString:@" "] stringByAppendingString:self.userLastName];
+}
+
+- (NSString *)subtitle {
+    return self.username;
+}
+
 @end

@@ -47,7 +47,7 @@
 
     NSDictionary *coordinateDictionary = tweetDictionary[@"coordinates"];
     NSArray *coordinates = coordinateDictionary[@"coordinates"];
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:[coordinates[0] doubleValue] longitude:[coordinates[1] doubleValue]];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:[coordinates[1] doubleValue] longitude:[coordinates[0] doubleValue]];
     tweet.location = location;
 
     return tweet;

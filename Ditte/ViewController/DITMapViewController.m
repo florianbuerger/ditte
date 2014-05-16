@@ -9,6 +9,7 @@
 #import "DITMapViewController.h"
 #import "DITTwitterSearcher.h"
 #import "DITTweet.h"
+#import "AsyncImageView.h"
 #import <AKLocationManager/AKLocationManager.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
@@ -96,8 +97,16 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
             annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:DITAnnotationViewIdentifier];
             annotationView.animatesDrop = YES;
             annotationView.canShowCallout = YES;
+            AsyncImageView *asyncImageView = [[AsyncImageView alloc] initWithFrame:CGRectMake(0, 0, 64.0f, 64.0f)];
+            asyncImageView.backgroundColor = [UIColor redColor];
+            asyncImageView.showActivityIndicator = YES;
+            annotationView.leftCalloutAccessoryView = asyncImageView;
+            
         }
+
         annotationView.annotation = annotation;
+        AsyncImageView *imageView = (AsyncImageView *) annotationView.leftCalloutAccessoryView;
+        imageView.imageURL = [(DITTweet *) annotation profileImageURL];
 
         return annotationView;
     }

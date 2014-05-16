@@ -16,6 +16,7 @@
 		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
 		17362DAD19262B530000A968 /* DITTwitterSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DAC19262B530000A968 /* DITTwitterSearcher.m */; };
 		17362DB119262BB20000A968 /* DITTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DB019262BB20000A968 /* DITTweet.m */; };
+		359133BF70F3CBE26F7398B7 /* DITProfileImageFetcherRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */; };
 		359135A33477848B42A60956 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591302DB7E393011517ABF4 /* Localizable.strings */; };
 		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,8 @@
 		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
 		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
 		3591302DB7E393011517ABF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ViewController/Localizable.strings; sourceTree = "<group>"; };
+		359138140B3DA4F86899035C /* DITProfileImageFetcherRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITProfileImageFetcherRequester.h; sourceTree = "<group>"; };
+		35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITProfileImageFetcherRequester.m; sourceTree = "<group>"; };
 		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
 		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +155,8 @@
 				17362DAC19262B530000A968 /* DITTwitterSearcher.m */,
 				17362DAF19262BB20000A968 /* DITTweet.h */,
 				17362DB019262BB20000A968 /* DITTweet.m */,
+				35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */,
+				359138140B3DA4F86899035C /* DITProfileImageFetcherRequester.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */,
 				17362D84192616CE0000A968 /* DITAppDelegate.m in Sources */,
 				17362D80192616CE0000A968 /* main.m in Sources */,
+				359133BF70F3CBE26F7398B7 /* DITProfileImageFetcherRequester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F47962F02344E4291D45640"
+               BlueprintIdentifier = "A4EA3613263D4EC78B8D7273"
                BuildableName = "libPods-Ditte-AGAssert.a"
                BlueprintName = "Pods-Ditte-AGAssert"
                ReferencedContainer = "container:Pods.xcodeproj">

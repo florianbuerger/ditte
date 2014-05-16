@@ -16,8 +16,11 @@
 @property(nonatomic, copy, readonly) NSString *username;
 @property(nonatomic, copy, readonly) NSString *userFirstName;
 @property(nonatomic, copy, readonly) NSString *userLastName;
-@property (nonatomic, copy, readonly) NSString *userFullName;
-@property (nonatomic, copy, readonly) NSURL *profileImageURL;
+@property(nonatomic, copy, readonly) NSString *userFullName;
+@property(nonatomic, copy, readonly) NSURL *profileImageURL;
+
+
+@property(nonatomic, strong) UIImage *profileImage;
 
 + (instancetype)tweetFromDictionary:(NSDictionary *)tweetDictionary;
 

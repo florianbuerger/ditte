@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Ditte-AsyncImageView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Ditte-CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,32 +36,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>02C2F82AB9A34430928968C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7818C7504602437198AB7A7E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7F47962F02344E4291D45640</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8470BB675C284E6AB36677A9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CB7B0F777C9349E39286891A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

@@ -8,6 +8,7 @@
 
 #import "DITTwitterSearcher.h"
 #import "DITTweet.h"
+#import "DITProfileImageFetcherRequester.h"
 
 @import Social;
 @import Accounts;
@@ -79,7 +80,9 @@
 
                         NSDictionary *coordinates = statusDictionary[@"coordinates"];
                         if (![coordinates isEqual:[NSNull null]]) {
-                            [tweets addObject:[DITTweet tweetFromDictionary:statusDictionary]];
+                            DITTweet *tweet = [DITTweet tweetFromDictionary:statusDictionary];
+                            [[DITProfileImageFetcherRequester sharedImageFetcherRequester] fetchProfileImage:tweet];
+                            [tweets addObject:tweet];
                         }
                     }
 

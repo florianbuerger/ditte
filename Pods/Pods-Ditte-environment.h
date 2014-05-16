@@ -1,4 +1,3 @@
-
 // To check if a library is compiled with CocoaPods you
 // can use the `COCOAPODS` macro definition which is
 // defined in the xcconfigs so it is available in
@@ -17,6 +16,12 @@
 #define COCOAPODS_VERSION_MAJOR_AKLocationManager 1
 #define COCOAPODS_VERSION_MINOR_AKLocationManager 0
 #define COCOAPODS_VERSION_PATCH_AKLocationManager 3
+
+// AsyncImageView
+#define COCOAPODS_POD_AVAILABLE_AsyncImageView
+#define COCOAPODS_VERSION_MAJOR_AsyncImageView 1
+#define COCOAPODS_VERSION_MINOR_AsyncImageView 5
+#define COCOAPODS_VERSION_PATCH_AsyncImageView 1
 
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack

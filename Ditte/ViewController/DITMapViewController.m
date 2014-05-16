@@ -29,7 +29,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     [AKLocationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
     [AKLocationManager startLocatingWithUpdateBlock:^(CLLocation *location) {
         [self zoomToLocation:location];
-    }                                   failedBlock:^(NSError *error) {
+    } failedBlock:^(NSError *error) {
         if (error) {
             DDLogError(@"Unable to start location updates. %@", error);
         }
@@ -42,9 +42,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 }
 
 - (void)zoomToLocation:(CLLocation *)location {
-    MKCoordinateRegion region;
-    region.center = location.coordinate;
-    region.span = MKCoordinateSpanMake(location.horizontalAccuracy / 111, location.verticalAccuracy / 111);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, location.horizontalAccuracy * 10000, location.verticalAccuracy * 10000);
     region = [self.mapView regionThatFits:region];
     [self.mapView setRegion:region animated:YES];
 
@@ -106,7 +104,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     return nil;
 }
 
-#pragma mark - Setup
+#pragma mark - Searching
 
 - (void)handOffSearch:(NSString *)searchTerm {
     [SVProgressHUD showWithStatus:@"Searching…" maskType:SVProgressHUDMaskTypeClear];
@@ -117,6 +115,8 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
         [SVProgressHUD showErrorWithStatus:@"IT FAILED"];
     }];
 }
+
+#pragma mark - Setup
 
 - (void)setUpUserInterface {
     CGFloat inset = 8.0f;

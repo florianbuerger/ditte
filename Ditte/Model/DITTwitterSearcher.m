@@ -61,7 +61,7 @@
     NSArray *twitterAccounts = [self.accountStore accountsWithAccountType:twitterAccountType];
     NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
     NSString *encodedSearchTerm = [searchTerm stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSDictionary *params = @{@"q" : encodedSearchTerm, @"count" : @"25"};
+    NSDictionary *params = @{@"q" : encodedSearchTerm, @"count" : @"500"};
     SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:url parameters:params];
     ACAccount *twitterAccount = twitterAccounts.lastObject;
     AGAssert(twitterAccount, @"There must be a Twitter account.");

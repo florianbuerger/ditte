@@ -15,6 +15,7 @@
 
 @interface DITTwitterSearcher ()
 @property ACAccountStore *accountStore;
+@property(nonatomic, strong) NSCache *cache;
 @end
 
 @implementation DITTwitterSearcher
@@ -31,6 +32,7 @@
 - (id)init {
     if ((self = [super init])) {
         [self setUpTwitter];
+        _cache = [[NSCache alloc] init];
     }
     return self;
 }

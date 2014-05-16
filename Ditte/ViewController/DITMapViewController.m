@@ -101,7 +101,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
             asyncImageView.backgroundColor = [UIColor redColor];
             asyncImageView.showActivityIndicator = YES;
             annotationView.leftCalloutAccessoryView = asyncImageView;
-            
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         }
 
         annotationView.annotation = annotation;
@@ -112,6 +112,11 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     }
     return nil;
 }
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+
+}
+
 
 #pragma mark - Searching
 

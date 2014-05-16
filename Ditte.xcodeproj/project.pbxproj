@@ -18,6 +18,8 @@
 		17362DB119262BB20000A968 /* DITTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DB019262BB20000A968 /* DITTweet.m */; };
 		359133BF70F3CBE26F7398B7 /* DITProfileImageFetcherRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */; };
 		359135A33477848B42A60956 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591302DB7E393011517ABF4 /* Localizable.strings */; };
+		35913D85A80301DEA12A7A38 /* DITTweetCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 359131396455449584D1A063 /* DITTweetCluster.m */; };
+		35913FBAC70EFE58AF98F345 /* DITAnnotationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359139BB524491B0E9C4A25E /* DITAnnotationDetailViewController.m */; };
 		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +52,12 @@
 		17362DAC19262B530000A968 /* DITTwitterSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTwitterSearcher.m; path = Model/DITTwitterSearcher.m; sourceTree = "<group>"; };
 		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
 		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
+		3591301D3ED87CADD9FF3052 /* DITTweetCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITTweetCluster.h; path = ViewController/DITTweetCluster.h; sourceTree = "<group>"; };
 		3591302DB7E393011517ABF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ViewController/Localizable.strings; sourceTree = "<group>"; };
+		359131396455449584D1A063 /* DITTweetCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTweetCluster.m; path = ViewController/DITTweetCluster.m; sourceTree = "<group>"; };
 		359138140B3DA4F86899035C /* DITProfileImageFetcherRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITProfileImageFetcherRequester.h; sourceTree = "<group>"; };
+		359138D4EB1359EC5DF561BB /* DITAnnotationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITAnnotationDetailViewController.h; path = ViewController/DITAnnotationDetailViewController.h; sourceTree = "<group>"; };
+		359139BB524491B0E9C4A25E /* DITAnnotationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITAnnotationDetailViewController.m; path = ViewController/DITAnnotationDetailViewController.m; sourceTree = "<group>"; };
 		35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITProfileImageFetcherRequester.m; sourceTree = "<group>"; };
 		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
 		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +121,8 @@
 				17362D85192616CE0000A968 /* Images.xcassets */,
 				17362D7A192616CE0000A968 /* Supporting Files */,
 				3591302DB7E393011517ABF4 /* Localizable.strings */,
+				359139BB524491B0E9C4A25E /* DITAnnotationDetailViewController.m */,
+				359138D4EB1359EC5DF561BB /* DITAnnotationDetailViewController.h */,
 			);
 			path = Ditte;
 			sourceTree = "<group>";
@@ -157,6 +165,8 @@
 				17362DB019262BB20000A968 /* DITTweet.m */,
 				35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */,
 				359138140B3DA4F86899035C /* DITProfileImageFetcherRequester.h */,
+				359131396455449584D1A063 /* DITTweetCluster.m */,
+				3591301D3ED87CADD9FF3052 /* DITTweetCluster.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -299,6 +309,8 @@
 				17362D84192616CE0000A968 /* DITAppDelegate.m in Sources */,
 				17362D80192616CE0000A968 /* main.m in Sources */,
 				359133BF70F3CBE26F7398B7 /* DITProfileImageFetcherRequester.m in Sources */,
+				35913FBAC70EFE58AF98F345 /* DITAnnotationDetailViewController.m in Sources */,
+				35913D85A80301DEA12A7A38 /* DITTweetCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

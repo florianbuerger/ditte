@@ -84,14 +84,18 @@
                     }
 
                     if (completionHandler) {
-                        completionHandler(tweets);
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            completionHandler(tweets);
+                        });
                     }
 
                 } else {
                     // Our JSON deserialization went awry
                     DDLogError(@"JSON Error: %@", [jsonError localizedDescription]);
                     if (errorHandler) {
-                        errorHandler(jsonError);
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            errorHandler(jsonError);
+                        });
                     }
                 }
             } else {

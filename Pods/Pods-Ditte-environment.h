@@ -6,6 +6,12 @@
 // project.
 
 
+// AGAssert
+#define COCOAPODS_POD_AVAILABLE_AGAssert
+#define COCOAPODS_VERSION_MAJOR_AGAssert 0
+#define COCOAPODS_VERSION_MINOR_AGAssert 1
+#define COCOAPODS_VERSION_PATCH_AGAssert 2
+
 // AKLocationManager
 #define COCOAPODS_POD_AVAILABLE_AKLocationManager
 #define COCOAPODS_VERSION_MAJOR_AKLocationManager 1

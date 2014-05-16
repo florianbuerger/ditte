@@ -21,6 +21,8 @@
 		17362D99192616CE0000A968 /* DitteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362D98192616CE0000A968 /* DitteTests.m */; };
 		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
 		17362DA6192617E10000A968 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA5192617E10000A968 /* MapKit.framework */; };
+		17362DA8192625350000A968 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA7192625350000A968 /* Social.framework */; };
+		17362DAA192626210000A968 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA9192626210000A968 /* Accounts.framework */; };
 		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		17362DA2192617AC0000A968 /* DITMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITMapViewController.h; path = ViewController/DITMapViewController.h; sourceTree = "<group>"; };
 		17362DA3192617AC0000A968 /* DITMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITMapViewController.m; path = ViewController/DITMapViewController.m; sourceTree = "<group>"; };
 		17362DA5192617E10000A968 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		17362DA7192625350000A968 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		17362DA9192626210000A968 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
 		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17362DAA192626210000A968 /* Accounts.framework in Frameworks */,
+				17362DA8192625350000A968 /* Social.framework in Frameworks */,
 				17362DA6192617E10000A968 /* MapKit.framework in Frameworks */,
 				17362D76192616CE0000A968 /* CoreGraphics.framework in Frameworks */,
 				17362D78192616CE0000A968 /* UIKit.framework in Frameworks */,
@@ -107,6 +113,8 @@
 		17362D72192616CE0000A968 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17362DA9192626210000A968 /* Accounts.framework */,
+				17362DA7192625350000A968 /* Social.framework */,
 				17362DA5192617E10000A968 /* MapKit.framework */,
 				17362D73192616CE0000A968 /* Foundation.framework */,
 				17362D75192616CE0000A968 /* CoreGraphics.framework */,

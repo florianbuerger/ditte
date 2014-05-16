@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Ditte-AGAssert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Ditte-AKLocationManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>20FC4E8D7D934012A4AF2957</key>
+		<key>0B1DBC91853B4D92ADF096CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1FD4F34E2934E6F89396B22</key>
+		<key>19222252987F4FBC9C2981DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D48BF0F641774646A0972CA1</key>
+		<key>1C1307EF09AB4F8BAE1C6838</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B23C7D96C1B94CF7B324132A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

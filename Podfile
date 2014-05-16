@@ -4,6 +4,7 @@
 target "Ditte" do
     pod 'AKLocationManager', '~>1.0.3'
     pod 'CocoaLumberjack', '1.8.1'
+    pod 'AGAssert', '~> 0.1'
 end
 
 target "DitteTests" do

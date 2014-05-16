@@ -8,6 +8,12 @@
 
 #import "DITTweet.h"
 
+@interface DITTweet ()
+
+@property (nonatomic, copy, readwrite) CLLocation *location;
+
+@end
+
 @implementation DITTweet
 
 

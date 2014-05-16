@@ -53,16 +53,15 @@ static NSString *const DITClusterAnnotationIdentifier = @"DITClusterAnnotationId
 #pragma mark - UITextFieldDelegate
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    BOOL isValid = [self validateInputInTextField:textField];
-    if (isValid) {
-        [self handOffSearch:textField.text];
-    }
+    [textField resignFirstResponder];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     BOOL isValid = [self validateInputInTextField:textField];
-    [textField resignFirstResponder];
-    return isValid;
+    if (isValid) {
+        [self handOffSearch:textField.text];
+    }
+    return YES;
 }
 
 - (BOOL)validateInputInTextField:(UITextField *)textField {

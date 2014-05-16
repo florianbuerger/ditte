@@ -7,6 +7,7 @@
 //
 
 #import "DITTwitterSearcher.h"
+#import "DITTweet.h"
 
 @import Social;
 @import Accounts;
@@ -54,7 +55,7 @@
     }];
 }
 
-- (void)askTwitterAPIWithSearchTerm:(NSString *)searchTerm {
+- (void)askTwitterAPIWithSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray *tweets))completionHandler error:(void (^)(NSError *error))errorHandler {
     ACAccountType *twitterAccountType = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     NSArray *twitterAccounts = [self.accountStore accountsWithAccountType:twitterAccountType];
     NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/search/tweets.json"];
@@ -71,10 +72,27 @@
                 NSError *jsonError;
                 NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&jsonError];
                 if (data) {
-                    DDLogVerbose(@"Search response: %@\n", data);
+
+                    NSMutableArray *tweets = [NSMutableArray array];
+                    NSArray *statuses = data[@"statuses"];
+                    for (NSDictionary *statusDictionary in statuses) {
+
+                        NSDictionary *coordinates = statusDictionary[@"coordinates"];
+                        if (![coordinates isEqual:[NSNull null]]) {
+                            [tweets addObject:[DITTweet tweetFromDictionary:statusDictionary]];
+                        }
+                    }
+
+                    if (completionHandler) {
+                        completionHandler(tweets);
+                    }
+
                 } else {
                     // Our JSON deserialization went awry
                     DDLogError(@"JSON Error: %@", [jsonError localizedDescription]);
+                    if (errorHandler) {
+                        errorHandler(jsonError);
+                    }
                 }
             } else {
                 // The server did not respond ... were we rate-limited?

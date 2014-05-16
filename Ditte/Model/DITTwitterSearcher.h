@@ -11,6 +11,6 @@
 @interface DITTwitterSearcher : NSObject
 
 + (instancetype)sharedSearcher;
-- (void)askTwitterAPIWithSearchTerm:(NSString *)searchTerm;
+- (void)askTwitterAPIWithSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray *tweets))completion error:(void (^)(NSError *error))error;
 
 @end

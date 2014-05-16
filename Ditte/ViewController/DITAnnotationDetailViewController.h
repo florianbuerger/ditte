@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 
 
-@interface DITAnnotationDetailViewController : UIViewController
+@interface DITAnnotationDetailViewController : UITableViewController
 @end

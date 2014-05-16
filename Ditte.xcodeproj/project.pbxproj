@@ -16,6 +16,7 @@
 		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
 		17362DAD19262B530000A968 /* DITTwitterSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DAC19262B530000A968 /* DITTwitterSearcher.m */; };
 		17362DB119262BB20000A968 /* DITTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DB019262BB20000A968 /* DITTweet.m */; };
+		17E4AECD192659DD00C26E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E4AECC192659DD00C26E36 /* Main.storyboard */; };
 		359133BF70F3CBE26F7398B7 /* DITProfileImageFetcherRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 35913A08F28CB240A9DC1FA8 /* DITProfileImageFetcherRequester.m */; };
 		359135A33477848B42A60956 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591302DB7E393011517ABF4 /* Localizable.strings */; };
 		35913D85A80301DEA12A7A38 /* DITTweetCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 359131396455449584D1A063 /* DITTweetCluster.m */; };
@@ -52,6 +53,7 @@
 		17362DAC19262B530000A968 /* DITTwitterSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTwitterSearcher.m; path = Model/DITTwitterSearcher.m; sourceTree = "<group>"; };
 		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
 		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
+		17E4AECC192659DD00C26E36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3591301D3ED87CADD9FF3052 /* DITTweetCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITTweetCluster.h; path = ViewController/DITTweetCluster.h; sourceTree = "<group>"; };
 		3591302DB7E393011517ABF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ViewController/Localizable.strings; sourceTree = "<group>"; };
 		359131396455449584D1A063 /* DITTweetCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTweetCluster.m; path = ViewController/DITTweetCluster.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				17362D83192616CE0000A968 /* DITAppDelegate.m */,
 				17362DA2192617AC0000A968 /* DITMapViewController.h */,
 				17362DA3192617AC0000A968 /* DITMapViewController.m */,
+				17E4AECC192659DD00C26E36 /* Main.storyboard */,
 				17362DAE19262BA50000A968 /* Model */,
 				17362D85192616CE0000A968 /* Images.xcassets */,
 				17362D7A192616CE0000A968 /* Supporting Files */,
@@ -252,6 +255,7 @@
 				17362D7E192616CE0000A968 /* InfoPlist.strings in Resources */,
 				17362D86192616CE0000A968 /* Images.xcassets in Resources */,
 				359135A33477848B42A60956 /* Localizable.strings in Resources */,
+				17E4AECD192659DD00C26E36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

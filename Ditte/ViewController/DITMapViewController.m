@@ -10,22 +10,22 @@
 #import "DITTwitterSearcher.h"
 #import "DITTweet.h"
 #import "AsyncImageView.h"
+#import "DITTweetCluster.h"
 #import <AKLocationManager/AKLocationManager.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
 static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIdentifier";
+static NSString *const DITClusterAnnotationIdentifier = @"DITClusterAnnotationIdentifier";
 
 @interface DITMapViewController () <MKMapViewDelegate, UITextFieldDelegate>
-@property MKMapView *mapView;
-@property UITextField *searchField;
+@property (nonatomic, weak) IBOutlet MKMapView *mapView;
+@property (nonatomic, weak) IBOutlet UITextField *searchField;
 @end
 
 @implementation DITMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self setUpUserInterface];
 
     [AKLocationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
     [AKLocationManager startLocatingWithUpdateBlock:^(CLLocation *location) {
@@ -98,7 +98,6 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
             annotationView.animatesDrop = YES;
             annotationView.canShowCallout = YES;
             AsyncImageView *asyncImageView = [[AsyncImageView alloc] initWithFrame:CGRectMake(0, 0, 64.0f, 64.0f)];
-            asyncImageView.backgroundColor = [UIColor redColor];
             asyncImageView.showActivityIndicator = YES;
             annotationView.leftCalloutAccessoryView = asyncImageView;
             annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
@@ -110,6 +109,19 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 
         return annotationView;
     }
+    
+    if ([annotation isKindOfClass:[DITTweetCluster class]]) {
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:DITClusterAnnotationIdentifier];
+        if (!annotationView) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:DITAnnotationViewIdentifier];
+            annotationView.animatesDrop = YES;
+            annotationView.canShowCallout = YES;
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        }
+        annotationView.annotation = annotation;
+        return annotationView;
+    }
+
     return nil;
 }
 
@@ -128,30 +140,6 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     } error:^(NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"IT FAILED"];
     }];
-}
-
-#pragma mark - Setup
-
-- (void)setUpUserInterface {
-    CGFloat inset = 8.0f;
-    CGRect fieldFrame = {{inset, 20.0f}, {CGRectGetWidth(self.view.bounds) - 2 * inset, 37.0f}};
-    fieldFrame = CGRectInset(fieldFrame, inset, 0);
-    UITextField *searchField = [[UITextField alloc] initWithFrame:fieldFrame];
-    searchField.delegate = self;
-    searchField.returnKeyType = UIReturnKeySearch;
-    searchField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    searchField.autocorrectionType = UITextAutocorrectionTypeNo;
-    searchField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    searchField.text = @"#uikonf";
-    [self.view addSubview:searchField];
-    self.searchField = searchField;
-
-    CGRect mapViewFrame = {{0, CGRectGetMaxY(fieldFrame)}, {CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - CGRectGetHeight(fieldFrame)}};
-    MKMapView *mapView = [[MKMapView alloc] initWithFrame:mapViewFrame];
-    mapView.delegate = self;
-    mapView.showsUserLocation = YES;
-    [self.view addSubview:mapView];
-    self.mapView = mapView;
 }
 
 @end

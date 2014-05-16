@@ -10,7 +10,10 @@
 
 @interface DITTweet ()
 
+@property(nonatomic, copy, readwrite) NSString *username;
+@property (nonatomic, copy, readwrite) NSString *userFullName;
 @property (nonatomic, copy, readwrite) CLLocation *location;
+@property (nonatomic, copy, readwrite) NSURL *profileImageURL;
 
 @end
 
@@ -30,11 +33,17 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"[%@: {location = %@}]", self.class, self.location];
+    return [NSString stringWithFormat:@"[%@: {username = %@, userFullName = %@, location = %@, profileImageURL = %@}]", self.class, self.username, self.userFullName, self.location, self.profileImageURL];
 }
 
 + (instancetype)tweetFromDictionary:(NSDictionary *)tweetDictionary {
     DITTweet *tweet = [DITTweet new];
+
+    NSDictionary *userDetailsDictionary = tweetDictionary[@"user"];
+
+    tweet.username = [NSString stringWithFormat:@"@%@", userDetailsDictionary[@"screen_name"]];
+    tweet.userFullName = userDetailsDictionary[@"name"];
+    tweet.profileImageURL = [[NSURL alloc] initWithString:userDetailsDictionary[@"profile_image_url"]];
 
     NSDictionary *coordinateDictionary = tweetDictionary[@"coordinates"];
     NSArray *coordinates = coordinateDictionary[@"coordinates"];
@@ -42,6 +51,14 @@
     tweet.location = location;
 
     return tweet;
+}
+
+- (NSString *)userFirstName {
+    return [[self.userFullName componentsSeparatedByString:@" "] firstObject];
+}
+
+- (NSString *)userLastName {
+    return [[self.userFullName componentsSeparatedByString:@" "] lastObject];
 }
 
 @end

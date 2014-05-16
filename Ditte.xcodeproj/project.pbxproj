@@ -19,6 +19,9 @@
 		17362D8F192616CE0000A968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D77192616CE0000A968 /* UIKit.framework */; };
 		17362D97192616CE0000A968 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17362D95192616CE0000A968 /* InfoPlist.strings */; };
 		17362D99192616CE0000A968 /* DitteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362D98192616CE0000A968 /* DitteTests.m */; };
+		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
+		17362DA6192617E10000A968 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA5192617E10000A968 /* MapKit.framework */; };
+		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		17362D94192616CE0000A968 /* DitteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DitteTests-Info.plist"; sourceTree = "<group>"; };
 		17362D96192616CE0000A968 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17362D98192616CE0000A968 /* DitteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitteTests.m; sourceTree = "<group>"; };
+		17362DA2192617AC0000A968 /* DITMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITMapViewController.h; path = ViewController/DITMapViewController.h; sourceTree = "<group>"; };
+		17362DA3192617AC0000A968 /* DITMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITMapViewController.m; path = ViewController/DITMapViewController.m; sourceTree = "<group>"; };
+		17362DA5192617E10000A968 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
+		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17362DA6192617E10000A968 /* MapKit.framework in Frameworks */,
 				17362D76192616CE0000A968 /* CoreGraphics.framework in Frameworks */,
 				17362D78192616CE0000A968 /* UIKit.framework in Frameworks */,
 				17362D74192616CE0000A968 /* Foundation.framework in Frameworks */,
+				C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				17362D92192616CE0000A968 /* DitteTests */,
 				17362D72192616CE0000A968 /* Frameworks */,
 				17362D71192616CE0000A968 /* Products */,
+				6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +107,12 @@
 		17362D72192616CE0000A968 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17362DA5192617E10000A968 /* MapKit.framework */,
 				17362D73192616CE0000A968 /* Foundation.framework */,
 				17362D75192616CE0000A968 /* CoreGraphics.framework */,
 				17362D77192616CE0000A968 /* UIKit.framework */,
 				17362D8C192616CE0000A968 /* XCTest.framework */,
+				99ACE95692C44100B8CF8104 /* libPods-Ditte.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +122,8 @@
 			children = (
 				17362D82192616CE0000A968 /* DITAppDelegate.h */,
 				17362D83192616CE0000A968 /* DITAppDelegate.m */,
+				17362DA2192617AC0000A968 /* DITMapViewController.h */,
+				17362DA3192617AC0000A968 /* DITMapViewController.m */,
 				17362D85192616CE0000A968 /* Images.xcassets */,
 				17362D7A192616CE0000A968 /* Supporting Files */,
 			);
@@ -151,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17362D9C192616CE0000A968 /* Build configuration list for PBXNativeTarget "Ditte" */;
 			buildPhases = (
+				B380AAE0D0B3465C9738DD86 /* Check Pods Manifest.lock */,
 				17362D6C192616CE0000A968 /* Sources */,
 				17362D6D192616CE0000A968 /* Frameworks */,
 				17362D6E192616CE0000A968 /* Resources */,
+				9F4FDE393A734579A1705D84 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,11 +252,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F4FDE393A734579A1705D84 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Ditte-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B380AAE0D0B3465C9738DD86 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17362D6C192616CE0000A968 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */,
 				17362D84192616CE0000A968 /* DITAppDelegate.m in Sources */,
 				17362D80192616CE0000A968 /* main.m in Sources */,
 			);
@@ -355,6 +406,7 @@
 		};
 		17362D9D192616CE0000A968 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +420,7 @@
 		};
 		17362D9E192616CE0000A968 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -438,6 +491,7 @@
 				17362D9E192616CE0000A968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17362D9F192616CE0000A968 /* Build configuration list for PBXNativeTarget "DitteTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +500,7 @@
 				17362DA1192616CE0000A968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

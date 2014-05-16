@@ -1,0 +1,17 @@
+PODS:
+  - AKLocationManager (1.0.3)
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+
+DEPENDENCIES:
+  - AKLocationManager (~> 1.0.3)
+  - CocoaLumberjack
+
+SPEC CHECKSUMS:
+  AKLocationManager: c2c1c8eecd37c2b9193cb7803db999bcc518315c
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+
+COCOAPODS: 0.32.1

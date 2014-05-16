@@ -94,12 +94,20 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:DITAnnotationViewIdentifier];
-    if (!annotationView) {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:DITAnnotationViewIdentifier];
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+        return nil;
+    if ([annotation isKindOfClass:[DITTweet class]]) {
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:DITAnnotationViewIdentifier];
+        if (!annotationView) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:DITAnnotationViewIdentifier];
+            annotationView.animatesDrop = YES;
+            annotationView.canShowCallout = YES;
+        }
+        annotationView.annotation = annotation;
+
+        return annotationView;
     }
-    annotationView.annotation = annotation;
-    return annotationView;
+    return nil;
 }
 
 #pragma mark - Setup

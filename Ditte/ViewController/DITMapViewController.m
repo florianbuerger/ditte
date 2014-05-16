@@ -36,6 +36,11 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     }];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.searchField becomeFirstResponder];
+}
+
 - (void)zoomToLocation:(CLLocation *)location {
     MKCoordinateRegion region;
     region.center = location.coordinate;
@@ -89,12 +94,11 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    DITTweet *tweet = nil;
     MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:DITAnnotationViewIdentifier];
     if (!annotationView) {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:tweet reuseIdentifier:DITAnnotationViewIdentifier];
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:DITAnnotationViewIdentifier];
     }
-    annotationView.annotation = tweet;
+    annotationView.annotation = annotation;
     return annotationView;
 }
 
@@ -102,8 +106,12 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 
 - (void)handOffSearch:(NSString *)searchTerm {
     [SVProgressHUD showWithStatus:@"Searching…" maskType:SVProgressHUDMaskTypeClear];
-    // [[DITTwitterSearcher sharedSearcher] askTwitterAPIWithSearchTerm:searchTerm];
-    [SVProgressHUD popActivity];
+    [[DITTwitterSearcher sharedSearcher] askTwitterAPIWithSearchTerm:searchTerm completion:^(NSArray *tweets) {
+        [SVProgressHUD popActivity];
+        [self.mapView addAnnotations:tweets];
+    } error:^(NSError *error) {
+        [SVProgressHUD showErrorWithStatus:@"IT FAILED"];
+    }];
 }
 
 - (void)setUpUserInterface {
@@ -116,7 +124,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     searchField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     searchField.autocorrectionType = UITextAutocorrectionTypeNo;
     searchField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    searchField.placeholder = NSLocalizedString(@"Enter your search term...", @"Enter your search term...");
+    searchField.text = @"#uikonf";
     [self.view addSubview:searchField];
     self.searchField = searchField;
 

@@ -55,7 +55,6 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     BOOL isValid = [self validateInputInTextField:textField];
-    [textField resignFirstResponder];
     if (isValid) {
         [self handOffSearch:textField.text];
     }
@@ -64,9 +63,6 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     BOOL isValid = [self validateInputInTextField:textField];
     [textField resignFirstResponder];
-    if (isValid) {
-        [self handOffSearch:textField.text];
-    }
     return isValid;
 }
 

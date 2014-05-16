@@ -25,7 +25,7 @@
 }
 
 - (NSString *)title {
-    return [[self.userFirstName stringByAppendingString:@" "] stringByAppendingString:self.userLastName];
+    return self.userFullName;
 }
 
 - (NSString *)subtitle {

@@ -10,12 +10,15 @@
 #import <CocoaLumberjack/DDASLLogger.h>
 #import <CocoaLumberjack/DDTTYLogger.h>
 #import "DITMapViewController.h"
+#import "DITTwitterSearcher.h"
 
 @implementation DITAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupLogging];
+
+    [[DITTwitterSearcher sharedSearcher] askTwitterAPIWithSearchTerm:@"#uikonf"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];

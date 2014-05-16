@@ -7,22 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17362D74192616CE0000A968 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D73192616CE0000A968 /* Foundation.framework */; };
-		17362D76192616CE0000A968 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D75192616CE0000A968 /* CoreGraphics.framework */; };
-		17362D78192616CE0000A968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D77192616CE0000A968 /* UIKit.framework */; };
 		17362D7E192616CE0000A968 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17362D7C192616CE0000A968 /* InfoPlist.strings */; };
 		17362D80192616CE0000A968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362D7F192616CE0000A968 /* main.m */; };
 		17362D84192616CE0000A968 /* DITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362D83192616CE0000A968 /* DITAppDelegate.m */; };
 		17362D86192616CE0000A968 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17362D85192616CE0000A968 /* Images.xcassets */; };
-		17362D8D192616CE0000A968 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D8C192616CE0000A968 /* XCTest.framework */; };
-		17362D8E192616CE0000A968 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D73192616CE0000A968 /* Foundation.framework */; };
-		17362D8F192616CE0000A968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362D77192616CE0000A968 /* UIKit.framework */; };
 		17362D97192616CE0000A968 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17362D95192616CE0000A968 /* InfoPlist.strings */; };
 		17362D99192616CE0000A968 /* DitteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362D98192616CE0000A968 /* DitteTests.m */; };
 		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
-		17362DA6192617E10000A968 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA5192617E10000A968 /* MapKit.framework */; };
-		17362DA8192625350000A968 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA7192625350000A968 /* Social.framework */; };
-		17362DAA192626210000A968 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17362DA9192626210000A968 /* Accounts.framework */; };
+		17362DAD19262B530000A968 /* DITTwitterSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DAC19262B530000A968 /* DITTwitterSearcher.m */; };
+		17362DB119262BB20000A968 /* DITTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DB019262BB20000A968 /* DITTweet.m */; };
 		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +31,6 @@
 
 /* Begin PBXFileReference section */
 		17362D70192616CE0000A968 /* Ditte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ditte.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17362D73192616CE0000A968 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		17362D75192616CE0000A968 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17362D77192616CE0000A968 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17362D7B192616CE0000A968 /* Ditte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ditte-Info.plist"; sourceTree = "<group>"; };
 		17362D7D192616CE0000A968 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17362D7F192616CE0000A968 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,15 +39,15 @@
 		17362D83192616CE0000A968 /* DITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITAppDelegate.m; sourceTree = "<group>"; };
 		17362D85192616CE0000A968 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17362D8B192616CE0000A968 /* DitteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DitteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17362D8C192616CE0000A968 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17362D94192616CE0000A968 /* DitteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DitteTests-Info.plist"; sourceTree = "<group>"; };
 		17362D96192616CE0000A968 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17362D98192616CE0000A968 /* DitteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitteTests.m; sourceTree = "<group>"; };
 		17362DA2192617AC0000A968 /* DITMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITMapViewController.h; path = ViewController/DITMapViewController.h; sourceTree = "<group>"; };
 		17362DA3192617AC0000A968 /* DITMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITMapViewController.m; path = ViewController/DITMapViewController.m; sourceTree = "<group>"; };
-		17362DA5192617E10000A968 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		17362DA7192625350000A968 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		17362DA9192626210000A968 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		17362DAB19262B530000A968 /* DITTwitterSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITTwitterSearcher.h; path = Model/DITTwitterSearcher.h; sourceTree = "<group>"; };
+		17362DAC19262B530000A968 /* DITTwitterSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTwitterSearcher.m; path = Model/DITTwitterSearcher.m; sourceTree = "<group>"; };
+		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
+		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
 		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
 		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,12 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17362DAA192626210000A968 /* Accounts.framework in Frameworks */,
-				17362DA8192625350000A968 /* Social.framework in Frameworks */,
-				17362DA6192617E10000A968 /* MapKit.framework in Frameworks */,
-				17362D76192616CE0000A968 /* CoreGraphics.framework in Frameworks */,
-				17362D78192616CE0000A968 /* UIKit.framework in Frameworks */,
-				17362D74192616CE0000A968 /* Foundation.framework in Frameworks */,
 				C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,9 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17362D8D192616CE0000A968 /* XCTest.framework in Frameworks */,
-				17362D8F192616CE0000A968 /* UIKit.framework in Frameworks */,
-				17362D8E192616CE0000A968 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,13 +94,6 @@
 		17362D72192616CE0000A968 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17362DA9192626210000A968 /* Accounts.framework */,
-				17362DA7192625350000A968 /* Social.framework */,
-				17362DA5192617E10000A968 /* MapKit.framework */,
-				17362D73192616CE0000A968 /* Foundation.framework */,
-				17362D75192616CE0000A968 /* CoreGraphics.framework */,
-				17362D77192616CE0000A968 /* UIKit.framework */,
-				17362D8C192616CE0000A968 /* XCTest.framework */,
 				99ACE95692C44100B8CF8104 /* libPods-Ditte.a */,
 			);
 			name = Frameworks;
@@ -132,6 +106,7 @@
 				17362D83192616CE0000A968 /* DITAppDelegate.m */,
 				17362DA2192617AC0000A968 /* DITMapViewController.h */,
 				17362DA3192617AC0000A968 /* DITMapViewController.m */,
+				17362DAE19262BA50000A968 /* Model */,
 				17362D85192616CE0000A968 /* Images.xcassets */,
 				17362D7A192616CE0000A968 /* Supporting Files */,
 			);
@@ -165,6 +140,17 @@
 				17362D95192616CE0000A968 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17362DAE19262BA50000A968 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17362DAB19262B530000A968 /* DITTwitterSearcher.h */,
+				17362DAC19262B530000A968 /* DITTwitterSearcher.m */,
+				17362DAF19262BB20000A968 /* DITTweet.h */,
+				17362DB019262BB20000A968 /* DITTweet.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17362DAD19262B530000A968 /* DITTwitterSearcher.m in Sources */,
+				17362DB119262BB20000A968 /* DITTweet.m in Sources */,
 				17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */,
 				17362D84192616CE0000A968 /* DITAppDelegate.m in Sources */,
 				17362D80192616CE0000A968 /* main.m in Sources */,

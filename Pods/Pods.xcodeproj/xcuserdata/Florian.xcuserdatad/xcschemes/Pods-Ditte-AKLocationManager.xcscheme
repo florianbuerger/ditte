@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19222252987F4FBC9C2981DB"
+               BlueprintIdentifier = "1DDB7F7DC8D24E1A9FC6A4ED"
                BuildableName = "libPods-Ditte-AKLocationManager.a"
                BlueprintName = "Pods-Ditte-AKLocationManager"
                ReferencedContainer = "container:Pods.xcodeproj">

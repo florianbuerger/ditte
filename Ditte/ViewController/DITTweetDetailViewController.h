@@ -5,6 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class DITTweet;
 
-@interface DITAnnotationDetailViewController : UITableViewController
+
+@interface DITTweetDetailViewController : UIViewController
+@property(nonatomic, strong) DITTweet *tweet;
 @end

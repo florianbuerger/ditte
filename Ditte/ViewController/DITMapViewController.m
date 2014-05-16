@@ -11,6 +11,8 @@
 #import "DITTweet.h"
 #import "AsyncImageView.h"
 #import "DITTweetCluster.h"
+#import "DITTweetClusterDetailViewController.h"
+#import "DITTweetDetailViewController.h"
 #import <AKLocationManager/AKLocationManager.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
@@ -125,7 +127,16 @@ static NSString *const DITClusterAnnotationIdentifier = @"DITClusterAnnotationId
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-
+    id tweetOrCluster = view.annotation;
+    UIViewController *detailController;
+    if ([tweetOrCluster isKindOfClass:[DITTweetCluster class]]) {
+        detailController = [self.storyboard instantiateViewControllerWithIdentifier:@"DITTweetClusterDetailViewController"];
+        ((DITTweetClusterDetailViewController *)detailController).tweetCluster = tweetOrCluster;
+    } else {
+        detailController = [self.storyboard instantiateViewControllerWithIdentifier:@"DITTweetDetailViewController"];
+        ((DITTweetDetailViewController *)detailController).tweet = tweetOrCluster;
+    }
+    [self.navigationController pushViewController:detailController animated:YES];
 }
 
 

@@ -3,10 +3,11 @@
 // Copyright (c) 2014 keslcod. All rights reserved.
 //
 
-#import "DITAnnotationDetailViewController.h"
+#import "DITTweetDetailViewController.h"
+#import "DITTweet.h"
 
 
-@implementation DITAnnotationDetailViewController {
+@implementation DITTweetDetailViewController {
 
 }
 @end

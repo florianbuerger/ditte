@@ -7,6 +7,7 @@ target "Ditte" do
   pod 'AGAssert', '~> 0.1'
   pod 'SVProgressHUD', '~> 1.0.0'
   pod 'AsyncImageView', '~> 1.5.1'
+  pod 'objc-geohash'
 end
 
 target "DitteTests" do

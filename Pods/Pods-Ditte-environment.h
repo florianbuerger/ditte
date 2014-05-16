@@ -1,3 +1,4 @@
+
 // To check if a library is compiled with CocoaPods you
 // can use the `COCOAPODS` macro definition which is
 // defined in the xcconfigs so it is available in
@@ -46,4 +47,10 @@
 #define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
 #define COCOAPODS_VERSION_MINOR_SVProgressHUD 0
 #define COCOAPODS_VERSION_PATCH_SVProgressHUD 0
+
+// objc-geohash
+#define COCOAPODS_POD_AVAILABLE_objc_geohash
+#define COCOAPODS_VERSION_MAJOR_objc_geohash 0
+#define COCOAPODS_VERSION_MINOR_objc_geohash 0
+#define COCOAPODS_VERSION_PATCH_objc_geohash 1
 

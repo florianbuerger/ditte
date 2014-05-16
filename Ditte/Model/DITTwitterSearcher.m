@@ -9,9 +9,12 @@
 #import "DITTwitterSearcher.h"
 #import "DITTweet.h"
 #import "DITProfileImageFetcherRequester.h"
+#import <objc-geohash/GeoHash.h>
 
 @import Social;
 @import Accounts;
+
+#import <CoreLocation/CoreLocation.h>
 
 @interface DITTwitterSearcher ()
 @property ACAccountStore *accountStore;
@@ -83,6 +86,13 @@
                         NSDictionary *coordinates = statusDictionary[@"coordinates"];
                         if (![coordinates isEqual:[NSNull null]]) {
                             DITTweet *tweet = [DITTweet tweetFromDictionary:statusDictionary];
+
+                            CLLocation *location = tweet.location;
+                            NSString *geoHash = [GeoHash hashForLatitude:location.coordinate.latitude
+                                                               longitude:location.coordinate.longitude
+                                                                  length:5];
+                            
+
                             [[DITProfileImageFetcherRequester sharedImageFetcherRequester] fetchProfileImage:tweet];
                             [tweets addObject:tweet];
                         }

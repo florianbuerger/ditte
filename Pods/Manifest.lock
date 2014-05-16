@@ -7,6 +7,7 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - objc-geohash (0.0.1)
   - SVProgressHUD (1.0)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - AKLocationManager (~> 1.0.3)
   - AsyncImageView (~> 1.5.1)
   - CocoaLumberjack (~> 1.8.1)
+  - objc-geohash
   - SVProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
@@ -21,6 +23,7 @@ SPEC CHECKSUMS:
   AKLocationManager: c2c1c8eecd37c2b9193cb7803db999bcc518315c
   AsyncImageView: 686febb2b2a923353ede67c529d257498059852d
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  objc-geohash: 18b5fa0970a9f75eeb6ddcc2e5dada4592261f87
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
 
 COCOAPODS: 0.32.1

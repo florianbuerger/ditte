@@ -11,6 +11,7 @@
 #import <CocoaLumberjack/DDTTYLogger.h>
 #import "DITMapViewController.h"
 #import "DITTwitterSearcher.h"
+#import "DITTweet.h"
 
 @implementation DITAppDelegate
 

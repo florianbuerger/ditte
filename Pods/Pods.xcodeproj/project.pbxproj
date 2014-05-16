@@ -7,373 +7,447 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B4ECC8EC54F4409931B3986 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AC69E43CC22E4A22B68F0C53 /* DDFileLogger.h */; };
-		0FDE2F1E9C0342E9B28EBFF8 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1181228F2AB7490FB480545B /* DDLog+LOGV.h */; };
-		12169F53E5F64404A4B1FFA7 /* AGAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AA7424C034DDE8176842A /* AGAssert.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		13F9879532394DE9BEFE5DA8 /* AGAssertionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 431EFC02C3274A9D9C0BEAC0 /* AGAssertionHandler.h */; };
-		1904935CADED4A7997B9D7E6 /* Pods-Ditte-CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76061A46E83840439CF342B3 /* Pods-Ditte-CocoaLumberjack-dummy.m */; };
-		191A0C25ACCD4A46A1F75918 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E606B70009104BF2BBCD05CC /* DDAbstractDatabaseLogger.h */; };
-		1B6BBE35E3714D86896D6DD5 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 35805F38DE614DC899808AC7 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		35A20974374C4A36832E259B /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B53278098A794B26B7A3CDDC /* DDASLLogger.h */; };
-		4F9BDDDFE7B641BF84C87575 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAB1008BABA4BBDBDC167C9 /* CoreLocation.framework */; };
-		565EADE6915944B19AE27950 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6311130A366F47C1A0DEB060 /* DDTTYLogger.h */; };
-		6075D2F0754B46A495EFDC9D /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 32086B635E674AACAD718FA2 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		629B4F26DE90426A9371F949 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8D51B01F0F4993A1FDC19D /* Foundation.framework */; };
-		6883C49AA9E144E7A0FDEE37 /* libPods-Ditte-AKLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C38DF4A0722243D39502E0D9 /* libPods-Ditte-AKLocationManager.a */; };
-		7456AEF89DF64B738B73F7DA /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 51ECBC3B0BBF46B688FC6DB0 /* DDMultiFormatter.h */; };
-		830A343BF87F4E8298D938FB /* Pods-Ditte-AGAssert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9027E9CAB1043B2B13CF103 /* Pods-Ditte-AGAssert-dummy.m */; };
-		8B9607A68C6D4F66AE587F9F /* libPods-Ditte-CocoaLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47D7F8423C7460886F074D2 /* libPods-Ditte-CocoaLumberjack.a */; };
-		94CDE96DDCD347A7A62DEEC7 /* AGAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDDD06D15E416B8E88B9FD /* AGAssertionHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		9B574C7E0492475C9CCB1AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8D51B01F0F4993A1FDC19D /* Foundation.framework */; };
-		9C972DF2A3604666934A9ABF /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F45A83B2DD9B4D84BF0FFEA0 /* DDLog.h */; };
-		A1DA6A18E401482588F6E759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8D51B01F0F4993A1FDC19D /* Foundation.framework */; };
-		A5A269DE8B3D4DC08F10D920 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3956B08097924E2EB81019DA /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		A79FD68D41494715AEFAA166 /* AKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452887861324F958EA80CF8 /* AKLocationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		AFCC1BCA654448BEB84DB55A /* Pods-Ditte-AKLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50343CB733784149ADB3FA73 /* Pods-Ditte-AKLocationManager-dummy.m */; };
-		BA46C43DB7564490A71E5D8D /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A9677460C4B138A7A0E7F /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		BF6BF198DEF5446DAD1E251C /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE56AD95B4A347E7A9F94E81 /* DDDispatchQueueLogFormatter.h */; };
-		C195792E81EC43ABB0223A29 /* AGAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2B6E23EE794F428BFC94EB /* AGAssert.h */; };
-		C9C61F82C89448D98D711E03 /* AKLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E0FE2FB6334461906FEE41 /* AKLocationManager.h */; };
-		CD0326658209406FA5CB615D /* Pods-Ditte-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF14164DD34DD29A8704E8 /* Pods-Ditte-dummy.m */; };
-		D63F485BA3FA484F8C29DA71 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2344E68EE82C4820BE8ED750 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		DA3C804D339D41BCAE1EED54 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90D2F22C1C458CB5C20FD4 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		E099F9C345C14D34BC9C82B6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 14523D02823C40B681C68081 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		E9BAD672269C4A4D95DFC9B2 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C8B50B0A84E7C92E71256 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		EB63A1943ABA406BA87D9E16 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D98812D82246A6A731F511 /* DDContextFilterLogFormatter.h */; };
-		F578550E653145ECB5ADBC64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8D51B01F0F4993A1FDC19D /* Foundation.framework */; };
-		F751611907E74DDDAE1C0046 /* libPods-Ditte-AGAssert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE0DE4ACA5B442A94C1187A /* libPods-Ditte-AGAssert.a */; };
+		003206C455594642846A3677 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC45189F1A49E1901A5BBB /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		113A1B0B8992427C906F3631 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DA532971E44858B6CF2025 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		14FC83B3F9BC42D4A805497B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06790494BC4E69B59AF372 /* Foundation.framework */; };
+		18073915370D4F53B6DF53CC /* Pods-Ditte-AKLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C60BA2854B03BD2860C4 /* Pods-Ditte-AKLocationManager-dummy.m */; };
+		1AAB043D146149FCA00C75AC /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A166C8D0F1DD4FBA9A6F8AC3 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		21320DBA4ECF41F9B92BB2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06790494BC4E69B59AF372 /* Foundation.framework */; };
+		2F39D4EA2A1442E1AFA6909E /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DC240D7D594FCF817A3C34 /* DDMultiFormatter.h */; };
+		2F6B7D5817D948B9BD390425 /* AKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84430BB6F746699DBC5B76 /* AKLocationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		301DFD13113B4A5F9DA59253 /* AGAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF47E7AB8BD4EA39FBA3089 /* AGAssert.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		34A1012022264EBCB142DCF8 /* Pods-Ditte-CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08342EDC76AE43F5A6CA200E /* Pods-Ditte-CocoaLumberjack-dummy.m */; };
+		4767ECE4821342C3848F569B /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D89746FAFB64D56AD9648C4 /* SVProgressHUD.h */; };
+		53F1EBA824034E35AEEFD723 /* Pods-Ditte-SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4A4390DB441E098FA935B /* Pods-Ditte-SVProgressHUD-dummy.m */; };
+		5613E45EE0C64CE6A393F5D5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A461CC6B3846BF89CE98B8 /* CoreLocation.framework */; };
+		60B161D657E3424A8EFA4081 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 54024374974C4178891EEB0D /* DDLog+LOGV.h */; };
+		697CF366C60942B49E2A0328 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AB2610538542B1B1A0875B /* DDAbstractDatabaseLogger.h */; };
+		6BA07326E21443C8BB1B8C99 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 325AABCAD6084CBA9CE0DEA2 /* DDFileLogger.h */; };
+		6D5D30A308384E6488F8D674 /* libPods-Ditte-AGAssert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF265075EB54735AA8D5D0A /* libPods-Ditte-AGAssert.a */; };
+		7393E5EFF64B4569AF477419 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428E5BDD8FF40F8BC85B238 /* DDLog.h */; };
+		751E11C9D8F14FA892AF3992 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41088870802D4200AC41E2FB /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7C68456AE2FB4987ABF21E76 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A9B6E120C4401EB427CD20 /* DDASLLogger.h */; };
+		8B5B3FF107DF43FD97B22D5E /* AKLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 948BAC459C9D469C87016FA5 /* AKLocationManager.h */; };
+		8E17AF2A9E44493ABCBE9549 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC802D5D18F40A88077C20E /* DDDispatchQueueLogFormatter.h */; };
+		9A85409E3044438BA7BB68E0 /* Pods-Ditte-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 081E058748E8484F895D8E19 /* Pods-Ditte-dummy.m */; };
+		9AC7253DB4484C4697749AEA /* libPods-Ditte-SVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF2DD5FB599494F9D2D8784 /* libPods-Ditte-SVProgressHUD.a */; };
+		B225C60FD42441098B0E97E6 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C716FFA9CF646DCAC6CC0BB /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BEE560E3203C4DFB87896975 /* libPods-Ditte-AKLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FE68918B5942FFBF318C66 /* libPods-Ditte-AKLocationManager.a */; };
+		CA879514C42F4CD88BD56C49 /* libPods-Ditte-CocoaLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E453F2934B0340E0BC5F1FFF /* libPods-Ditte-CocoaLumberjack.a */; };
+		D64C1F3C2464478F95CD6AAC /* AGAssertionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E892EB944FF4BF288069F53 /* AGAssertionHandler.h */; };
+		D8A37DA90BA44953BBBD488A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06790494BC4E69B59AF372 /* Foundation.framework */; };
+		DBB9CB6A33D94E39B1A918FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF358F8E51684292AF66AD31 /* QuartzCore.framework */; };
+		DCA1527435444C68A2F6847E /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7FF877DC2A4B1FBBCF1FBA /* DDContextFilterLogFormatter.h */; };
+		E07C9C50B5B24BCDB6568C49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06790494BC4E69B59AF372 /* Foundation.framework */; };
+		E3DBCE9F6CD7499CB2AABEEC /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF043F581C04982BE2D2306 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E6E379A6086F489A8520B7D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06790494BC4E69B59AF372 /* Foundation.framework */; };
+		E8D6AFCE5A6F43AC91BA4494 /* AGAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A93D76D43B604BA4AF13D7C2 /* AGAssertionHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E9A7228CAC5D4773BD86F1BC /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F0B6809246439FAF09FD8C /* DDTTYLogger.h */; };
+		EC62F64A214D4AB1A53D88B9 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC7541722F04AF5B50E64B9 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		EDCD3B5EFD9046DD907568E9 /* Pods-Ditte-AGAssert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6603AA8D02F6432FA28DCC51 /* Pods-Ditte-AGAssert-dummy.m */; };
+		EF8EE23354674398B3CBAD47 /* AGAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B0FFBCD2343AAAEE693AE /* AGAssert.h */; };
+		F1676272DCB44768B87C4247 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8664EF985DDA465D89C4B687 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB40BD80DFE34574855AF1B5 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E644EA888F2446428C5CA0C0 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		407AD610E1B24209B4B22FC7 /* PBXContainerItemProxy */ = {
+		0014F318E1BF4005A840966D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D8DA909306344F189CFE95CC /* Project object */;
+			containerPortal = C761CEC8B6954970AA17D90F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 442BFE117D5146DCA05A5BE3;
-			remoteInfo = "Pods-Ditte-AGAssert";
-		};
-		B00961EAAA1B4A65AC7815A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8DA909306344F189CFE95CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DDB7F7DC8D24E1A9FC6A4ED;
+			remoteGlobalIDString = 02C2F82AB9A34430928968C5;
 			remoteInfo = "Pods-Ditte-AKLocationManager";
 		};
-		F9DDD7FBDFA24A67AD95312A /* PBXContainerItemProxy */ = {
+		1D880644D6904D3BBE7B4460 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D8DA909306344F189CFE95CC /* Project object */;
+			containerPortal = C761CEC8B6954970AA17D90F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA9791D9FE804AEB943F9B02;
+			remoteGlobalIDString = 7818C7504602437198AB7A7E;
+			remoteInfo = "Pods-Ditte-SVProgressHUD";
+		};
+		4B87648FE13E4905B4EB2F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C761CEC8B6954970AA17D90F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F47962F02344E4291D45640;
+			remoteInfo = "Pods-Ditte-AGAssert";
+		};
+		7FB200A8E8884C5BA3534880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C761CEC8B6954970AA17D90F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8470BB675C284E6AB36677A9;
 			remoteInfo = "Pods-Ditte-CocoaLumberjack";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04E0FE2FB6334461906FEE41 /* AKLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLocationManager.h; path = Classes/AKLocationManager.h; sourceTree = "<group>"; };
-		0C2608130D234537815AF2DF /* Pods-Ditte-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ditte-resources.sh"; sourceTree = "<group>"; };
-		0D8D51B01F0F4993A1FDC19D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1181228F2AB7490FB480545B /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Lumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
-		14523D02823C40B681C68081 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Lumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
-		1B97DCBAFBA541938DFA07FD /* Pods-Ditte-CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
-		2344E68EE82C4820BE8ED750 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Lumberjack/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		2B2B6E23EE794F428BFC94EB /* AGAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AGAssert.h; path = Source/AGAssert.h; sourceTree = "<group>"; };
-		2FB6DE07A26645DFB6B6744A /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-CocoaLumberjack-Private.xcconfig"; sourceTree = "<group>"; };
-		32086B635E674AACAD718FA2 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Lumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		3452887861324F958EA80CF8 /* AKLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKLocationManager.m; path = Classes/AKLocationManager.m; sourceTree = "<group>"; };
-		35805F38DE614DC899808AC7 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Lumberjack/DDFileLogger.m; sourceTree = "<group>"; };
-		3956B08097924E2EB81019DA /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Lumberjack/DDASLLogger.m; sourceTree = "<group>"; };
-		39AC8574B37F4C659D7C2112 /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
-		3C13DBA68DEB4DF083F4360D /* Pods-Ditte-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ditte-acknowledgements.markdown"; sourceTree = "<group>"; };
-		421002BA3A07403F9B98A96E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		431EFC02C3274A9D9C0BEAC0 /* AGAssertionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AGAssertionHandler.h; path = Source/AGAssertionHandler.h; sourceTree = "<group>"; };
-		4D0C8B50B0A84E7C92E71256 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Lumberjack/DDLog.m; sourceTree = "<group>"; };
-		50343CB733784149ADB3FA73 /* Pods-Ditte-AKLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-AKLocationManager-dummy.m"; sourceTree = "<group>"; };
-		517A9677460C4B138A7A0E7F /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Lumberjack/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
-		51ECBC3B0BBF46B688FC6DB0 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Lumberjack/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
-		61181751D62148568F708669 /* Pods-Ditte-AGAssert-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AGAssert-Private.xcconfig"; sourceTree = "<group>"; };
-		6311130A366F47C1A0DEB060 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Lumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
-		69D17BA10A8442178E61E0B0 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ADF14164DD34DD29A8704E8 /* Pods-Ditte-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-dummy.m"; sourceTree = "<group>"; };
-		76061A46E83840439CF342B3 /* Pods-Ditte-CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
-		8862D26801FC4F97A3283BB9 /* Pods-Ditte-AKLocationManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AKLocationManager-Private.xcconfig"; sourceTree = "<group>"; };
-		8AB52DF74ADC42D4B4EE416C /* Pods-Ditte-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ditte-acknowledgements.plist"; sourceTree = "<group>"; };
-		8DF69DD10E8A4F34B0B9BB84 /* Pods-Ditte-AKLocationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AKLocationManager.xcconfig"; sourceTree = "<group>"; };
-		9B3AA7424C034DDE8176842A /* AGAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AGAssert.m; path = Source/AGAssert.m; sourceTree = "<group>"; };
-		9F7397556C8E4D918D1C7217 /* Pods-Ditte-AKLocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-AKLocationManager-prefix.pch"; sourceTree = "<group>"; };
-		A0C3A9499FA642E2906C07B2 /* Pods-Ditte-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-environment.h"; sourceTree = "<group>"; };
-		AC69E43CC22E4A22B68F0C53 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Lumberjack/DDFileLogger.h; sourceTree = "<group>"; };
-		AF694EF4B6EA47A69D8F0780 /* Pods-Ditte-AGAssert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AGAssert.xcconfig"; sourceTree = "<group>"; };
-		AF90D2F22C1C458CB5C20FD4 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Lumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		B47D7F8423C7460886F074D2 /* libPods-Ditte-CocoaLumberjack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-CocoaLumberjack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53278098A794B26B7A3CDDC /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Lumberjack/DDASLLogger.h; sourceTree = "<group>"; };
-		C0D98812D82246A6A731F511 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Lumberjack/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		C38DF4A0722243D39502E0D9 /* libPods-Ditte-AKLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-AKLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C72F27AFC26B4311B22CB236 /* Pods-Ditte-AGAssert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-AGAssert-prefix.pch"; sourceTree = "<group>"; };
-		C9027E9CAB1043B2B13CF103 /* Pods-Ditte-AGAssert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-AGAssert-dummy.m"; sourceTree = "<group>"; };
-		DAAB1008BABA4BBDBDC167C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		DAE0DE4ACA5B442A94C1187A /* libPods-Ditte-AGAssert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-AGAssert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E606B70009104BF2BBCD05CC /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Lumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		EAAE685BB0C7415691FB47FF /* Pods-Ditte-CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-CocoaLumberjack.xcconfig"; sourceTree = "<group>"; };
-		F3FDDD06D15E416B8E88B9FD /* AGAssertionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AGAssertionHandler.m; path = Source/AGAssertionHandler.m; sourceTree = "<group>"; };
-		F45A83B2DD9B4D84BF0FFEA0 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Lumberjack/DDLog.h; sourceTree = "<group>"; };
-		FE56AD95B4A347E7A9F94E81 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Lumberjack/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		081E058748E8484F895D8E19 /* Pods-Ditte-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-dummy.m"; sourceTree = "<group>"; };
+		08342EDC76AE43F5A6CA200E /* Pods-Ditte-CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		0C716FFA9CF646DCAC6CC0BB /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Lumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		105079FE86A9490CA5F34445 /* Pods-Ditte-AGAssert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-AGAssert-prefix.pch"; sourceTree = "<group>"; };
+		142EB86E3DEC4E9E9AB7E313 /* Pods-Ditte-AGAssert-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AGAssert-Private.xcconfig"; sourceTree = "<group>"; };
+		15F0B6809246439FAF09FD8C /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Lumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
+		1AF7C60BA2854B03BD2860C4 /* Pods-Ditte-AKLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-AKLocationManager-dummy.m"; sourceTree = "<group>"; };
+		201FBE1183D94BEDBA0BFA39 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		213FFE5B11CA4BE79AAB03C5 /* Pods-Ditte-AKLocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-AKLocationManager-prefix.pch"; sourceTree = "<group>"; };
+		325AABCAD6084CBA9CE0DEA2 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Lumberjack/DDFileLogger.h; sourceTree = "<group>"; };
+		3C06790494BC4E69B59AF372 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		40D4A4390DB441E098FA935B /* Pods-Ditte-SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		41088870802D4200AC41E2FB /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Lumberjack/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		48A9B6E120C4401EB427CD20 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Lumberjack/DDASLLogger.h; sourceTree = "<group>"; };
+		4A7FF877DC2A4B1FBBCF1FBA /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Lumberjack/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		52A461CC6B3846BF89CE98B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		5332B455980044A5BAF547CC /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54024374974C4178891EEB0D /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Lumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		544A157A562D4D539733E3F0 /* Pods-Ditte-AKLocationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AKLocationManager.xcconfig"; sourceTree = "<group>"; };
+		593757B9B8474805AE117F67 /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
+		5CDC45189F1A49E1901A5BBB /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Lumberjack/DDASLLogger.m; sourceTree = "<group>"; };
+		5D2926B285754590A5F8BA87 /* Pods-Ditte-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ditte-resources.sh"; sourceTree = "<group>"; };
+		61D11DDD1C2A4DBFA74C4C33 /* Pods-Ditte-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-environment.h"; sourceTree = "<group>"; };
+		6603AA8D02F6432FA28DCC51 /* Pods-Ditte-AGAssert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ditte-AGAssert-dummy.m"; sourceTree = "<group>"; };
+		67AB2610538542B1B1A0875B /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Lumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		68DC240D7D594FCF817A3C34 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Lumberjack/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		6E892EB944FF4BF288069F53 /* AGAssertionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AGAssertionHandler.h; path = Source/AGAssertionHandler.h; sourceTree = "<group>"; };
+		70FE68918B5942FFBF318C66 /* libPods-Ditte-AKLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-AKLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7428E5BDD8FF40F8BC85B238 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Lumberjack/DDLog.h; sourceTree = "<group>"; };
+		7E5B22FC48544A74B26E0DA6 /* Pods-Ditte-CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-CocoaLumberjack.xcconfig"; sourceTree = "<group>"; };
+		8664EF985DDA465D89C4B687 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Lumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
+		89049DB09B894966BE49D890 /* Pods-Ditte-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ditte-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B84430BB6F746699DBC5B76 /* AKLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKLocationManager.m; path = Classes/AKLocationManager.m; sourceTree = "<group>"; };
+		948BAC459C9D469C87016FA5 /* AKLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLocationManager.h; path = Classes/AKLocationManager.h; sourceTree = "<group>"; };
+		991B0FFBCD2343AAAEE693AE /* AGAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AGAssert.h; path = Source/AGAssert.h; sourceTree = "<group>"; };
+		9D89746FAFB64D56AD9648C4 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		9EF2DD5FB599494F9D2D8784 /* libPods-Ditte-SVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-SVProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166C8D0F1DD4FBA9A6F8AC3 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Lumberjack/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		A93D76D43B604BA4AF13D7C2 /* AGAssertionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AGAssertionHandler.m; path = Source/AGAssertionHandler.m; sourceTree = "<group>"; };
+		A9833B2AD1B949A7B218D171 /* Pods-Ditte-AKLocationManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AKLocationManager-Private.xcconfig"; sourceTree = "<group>"; };
+		AD01542A545341FB91431DF6 /* Pods-Ditte-CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		ADF043F581C04982BE2D2306 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Lumberjack/DDFileLogger.m; sourceTree = "<group>"; };
+		ADF265075EB54735AA8D5D0A /* libPods-Ditte-AGAssert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-AGAssert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC802D5D18F40A88077C20E /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Lumberjack/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		BF358F8E51684292AF66AD31 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CC6089B0D85244049429078F /* Pods-Ditte-SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ditte-SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		CCC7541722F04AF5B50E64B9 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Lumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		D5DA532971E44858B6CF2025 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Lumberjack/DDLog.m; sourceTree = "<group>"; };
+		DDBF467FC7F54FA8BAAFD426 /* Pods-Ditte-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ditte-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E28D84B317F44A05BD500DF4 /* Pods-Ditte-SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-SVProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		E353171C15C24DB6BF11256E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E453F2934B0340E0BC5F1FFF /* libPods-Ditte-CocoaLumberjack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte-CocoaLumberjack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E644EA888F2446428C5CA0C0 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		ECF47E7AB8BD4EA39FBA3089 /* AGAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AGAssert.m; path = Source/AGAssert.m; sourceTree = "<group>"; };
+		F613B2F3C39F4705B8DE17FE /* Pods-Ditte-AGAssert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-AGAssert.xcconfig"; sourceTree = "<group>"; };
+		F9C373998A264180B69925A1 /* Pods-Ditte-SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		FFB4166768E74637AC7E2B96 /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ditte-CocoaLumberjack-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C92A79797834ED19F56F956 /* Frameworks */ = {
+		41AC8214EF4A4E10988BE73E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DA6A18E401482588F6E759 /* Foundation.framework in Frameworks */,
-				F751611907E74DDDAE1C0046 /* libPods-Ditte-AGAssert.a in Frameworks */,
-				6883C49AA9E144E7A0FDEE37 /* libPods-Ditte-AKLocationManager.a in Frameworks */,
-				8B9607A68C6D4F66AE587F9F /* libPods-Ditte-CocoaLumberjack.a in Frameworks */,
+				E07C9C50B5B24BCDB6568C49 /* Foundation.framework in Frameworks */,
+				6D5D30A308384E6488F8D674 /* libPods-Ditte-AGAssert.a in Frameworks */,
+				BEE560E3203C4DFB87896975 /* libPods-Ditte-AKLocationManager.a in Frameworks */,
+				CA879514C42F4CD88BD56C49 /* libPods-Ditte-CocoaLumberjack.a in Frameworks */,
+				9AC7253DB4484C4697749AEA /* libPods-Ditte-SVProgressHUD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F00F3C6FDD24AA096AB7A67 /* Frameworks */ = {
+		5AEDF4E0668449439962BECC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9BDDDFE7B641BF84C87575 /* CoreLocation.framework in Frameworks */,
-				F578550E653145ECB5ADBC64 /* Foundation.framework in Frameworks */,
+				E6E379A6086F489A8520B7D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AF8D12D3E004B50A088105B /* Frameworks */ = {
+		8A7DEB1A2B974E2E8BFEC45F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				629B4F26DE90426A9371F949 /* Foundation.framework in Frameworks */,
+				5613E45EE0C64CE6A393F5D5 /* CoreLocation.framework in Frameworks */,
+				D8A37DA90BA44953BBBD488A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2010F02BBC345FABA875C32 /* Frameworks */ = {
+		9A12047C89C94397A6ECF294 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B574C7E0492475C9CCB1AEC /* Foundation.framework in Frameworks */,
+				21320DBA4ECF41F9B92BB2B5 /* Foundation.framework in Frameworks */,
+				DBB9CB6A33D94E39B1A918FE /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A6DBF364FF4C11AC5002A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FC83B3F9BC42D4A805497B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0620D86205244D21AA687B62 /* Pods */ = {
+		042CF44BD4DD4972B1770F71 /* AGAssert */ = {
 			isa = PBXGroup;
 			children = (
-				A732B9BD52DE49B9B94CB54B /* AGAssert */,
-				15371B675BAA49388B9B10D0 /* AKLocationManager */,
-				4AB2671A39D546A3AF53A458 /* CocoaLumberjack */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		15371B675BAA49388B9B10D0 /* AKLocationManager */ = {
-			isa = PBXGroup;
-			children = (
-				04E0FE2FB6334461906FEE41 /* AKLocationManager.h */,
-				3452887861324F958EA80CF8 /* AKLocationManager.m */,
-				6257314689B540F1B2D2571E /* Support Files */,
-			);
-			name = AKLocationManager;
-			path = AKLocationManager;
-			sourceTree = "<group>";
-		};
-		360CA6C957BD49A78ECCEC42 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D1C38385119F407EB197626F /* Pods-Ditte */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4AB2671A39D546A3AF53A458 /* CocoaLumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				751550E6DC55498AA47EF845 /* Core */,
-				9FEA7C9480064AC0A5215E4C /* Extensions */,
-				868003E72B364453BB1546DF /* Support Files */,
-			);
-			name = CocoaLumberjack;
-			path = CocoaLumberjack;
-			sourceTree = "<group>";
-		};
-		6257314689B540F1B2D2571E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8DF69DD10E8A4F34B0B9BB84 /* Pods-Ditte-AKLocationManager.xcconfig */,
-				8862D26801FC4F97A3283BB9 /* Pods-Ditte-AKLocationManager-Private.xcconfig */,
-				50343CB733784149ADB3FA73 /* Pods-Ditte-AKLocationManager-dummy.m */,
-				9F7397556C8E4D918D1C7217 /* Pods-Ditte-AKLocationManager-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		751550E6DC55498AA47EF845 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B53278098A794B26B7A3CDDC /* DDASLLogger.h */,
-				3956B08097924E2EB81019DA /* DDASLLogger.m */,
-				E606B70009104BF2BBCD05CC /* DDAbstractDatabaseLogger.h */,
-				32086B635E674AACAD718FA2 /* DDAbstractDatabaseLogger.m */,
-				AC69E43CC22E4A22B68F0C53 /* DDFileLogger.h */,
-				35805F38DE614DC899808AC7 /* DDFileLogger.m */,
-				F45A83B2DD9B4D84BF0FFEA0 /* DDLog.h */,
-				4D0C8B50B0A84E7C92E71256 /* DDLog.m */,
-				1181228F2AB7490FB480545B /* DDLog+LOGV.h */,
-				6311130A366F47C1A0DEB060 /* DDTTYLogger.h */,
-				14523D02823C40B681C68081 /* DDTTYLogger.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		868003E72B364453BB1546DF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAAE685BB0C7415691FB47FF /* Pods-Ditte-CocoaLumberjack.xcconfig */,
-				2FB6DE07A26645DFB6B6744A /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */,
-				76061A46E83840439CF342B3 /* Pods-Ditte-CocoaLumberjack-dummy.m */,
-				1B97DCBAFBA541938DFA07FD /* Pods-Ditte-CocoaLumberjack-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		8769F202567D4813964ED585 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF694EF4B6EA47A69D8F0780 /* Pods-Ditte-AGAssert.xcconfig */,
-				61181751D62148568F708669 /* Pods-Ditte-AGAssert-Private.xcconfig */,
-				C9027E9CAB1043B2B13CF103 /* Pods-Ditte-AGAssert-dummy.m */,
-				C72F27AFC26B4311B22CB236 /* Pods-Ditte-AGAssert-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		9FEA7C9480064AC0A5215E4C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C0D98812D82246A6A731F511 /* DDContextFilterLogFormatter.h */,
-				AF90D2F22C1C458CB5C20FD4 /* DDContextFilterLogFormatter.m */,
-				FE56AD95B4A347E7A9F94E81 /* DDDispatchQueueLogFormatter.h */,
-				2344E68EE82C4820BE8ED750 /* DDDispatchQueueLogFormatter.m */,
-				51ECBC3B0BBF46B688FC6DB0 /* DDMultiFormatter.h */,
-				517A9677460C4B138A7A0E7F /* DDMultiFormatter.m */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		A732B9BD52DE49B9B94CB54B /* AGAssert */ = {
-			isa = PBXGroup;
-			children = (
-				2B2B6E23EE794F428BFC94EB /* AGAssert.h */,
-				9B3AA7424C034DDE8176842A /* AGAssert.m */,
-				431EFC02C3274A9D9C0BEAC0 /* AGAssertionHandler.h */,
-				F3FDDD06D15E416B8E88B9FD /* AGAssertionHandler.m */,
-				8769F202567D4813964ED585 /* Support Files */,
+				991B0FFBCD2343AAAEE693AE /* AGAssert.h */,
+				ECF47E7AB8BD4EA39FBA3089 /* AGAssert.m */,
+				6E892EB944FF4BF288069F53 /* AGAssertionHandler.h */,
+				A93D76D43B604BA4AF13D7C2 /* AGAssertionHandler.m */,
+				26DBD41FD9C44B869C272A52 /* Support Files */,
 			);
 			name = AGAssert;
 			path = AGAssert;
 			sourceTree = "<group>";
 		};
-		AE184A15D26B425C9E187EF0 /* iOS */ = {
+		1255DBCE8A3F4B75A5AD5444 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAAB1008BABA4BBDBDC167C9 /* CoreLocation.framework */,
-				0D8D51B01F0F4993A1FDC19D /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B50B418B8F73435E88B94E9C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE184A15D26B425C9E187EF0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B6F358F2FB294564B06CAB8F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				69D17BA10A8442178E61E0B0 /* libPods-Ditte.a */,
-				DAE0DE4ACA5B442A94C1187A /* libPods-Ditte-AGAssert.a */,
-				C38DF4A0722243D39502E0D9 /* libPods-Ditte-AKLocationManager.a */,
-				B47D7F8423C7460886F074D2 /* libPods-Ditte-CocoaLumberjack.a */,
+				5332B455980044A5BAF547CC /* libPods-Ditte.a */,
+				ADF265075EB54735AA8D5D0A /* libPods-Ditte-AGAssert.a */,
+				70FE68918B5942FFBF318C66 /* libPods-Ditte-AKLocationManager.a */,
+				E453F2934B0340E0BC5F1FFF /* libPods-Ditte-CocoaLumberjack.a */,
+				9EF2DD5FB599494F9D2D8784 /* libPods-Ditte-SVProgressHUD.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1C38385119F407EB197626F /* Pods-Ditte */ = {
+		14111226616D42F8ABEDEF74 /* AKLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				39AC8574B37F4C659D7C2112 /* Pods-Ditte.xcconfig */,
-				3C13DBA68DEB4DF083F4360D /* Pods-Ditte-acknowledgements.markdown */,
-				8AB52DF74ADC42D4B4EE416C /* Pods-Ditte-acknowledgements.plist */,
-				6ADF14164DD34DD29A8704E8 /* Pods-Ditte-dummy.m */,
-				A0C3A9499FA642E2906C07B2 /* Pods-Ditte-environment.h */,
-				0C2608130D234537815AF2DF /* Pods-Ditte-resources.sh */,
+				948BAC459C9D469C87016FA5 /* AKLocationManager.h */,
+				8B84430BB6F746699DBC5B76 /* AKLocationManager.m */,
+				75C92586B29C40B1A710A94C /* Support Files */,
+			);
+			name = AKLocationManager;
+			path = AKLocationManager;
+			sourceTree = "<group>";
+		};
+		1D97F3CE70A74A7193515DA6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DC815C44A449F68A04A9CB /* Pods-Ditte */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		26DBD41FD9C44B869C272A52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F613B2F3C39F4705B8DE17FE /* Pods-Ditte-AGAssert.xcconfig */,
+				142EB86E3DEC4E9E9AB7E313 /* Pods-Ditte-AGAssert-Private.xcconfig */,
+				6603AA8D02F6432FA28DCC51 /* Pods-Ditte-AGAssert-dummy.m */,
+				105079FE86A9490CA5F34445 /* Pods-Ditte-AGAssert-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		379CC92BA1134DD88140CEE0 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				982639AAA1284F0C80FF8E3E /* Core */,
+				7A66ECF835FF433FB0982F80 /* Extensions */,
+				54CBC76B0EA24080828FDDB2 /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		41A0C0CE54FD4A45A9BCC61C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB2C2B8B4E47B4AE87374F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51DFB8A4C77C41799DF43029 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9D89746FAFB64D56AD9648C4 /* SVProgressHUD.h */,
+				E644EA888F2446428C5CA0C0 /* SVProgressHUD.m */,
+				5EE5130858F848C785EBD923 /* Resources */,
+				CF955945541C49259E8EFF1A /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		54CBC76B0EA24080828FDDB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E5B22FC48544A74B26E0DA6 /* Pods-Ditte-CocoaLumberjack.xcconfig */,
+				FFB4166768E74637AC7E2B96 /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */,
+				08342EDC76AE43F5A6CA200E /* Pods-Ditte-CocoaLumberjack-dummy.m */,
+				AD01542A545341FB91431DF6 /* Pods-Ditte-CocoaLumberjack-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		5EE5130858F848C785EBD923 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				201FBE1183D94BEDBA0BFA39 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6EBB2C2B8B4E47B4AE87374F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				52A461CC6B3846BF89CE98B8 /* CoreLocation.framework */,
+				3C06790494BC4E69B59AF372 /* Foundation.framework */,
+				BF358F8E51684292AF66AD31 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75C92586B29C40B1A710A94C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				544A157A562D4D539733E3F0 /* Pods-Ditte-AKLocationManager.xcconfig */,
+				A9833B2AD1B949A7B218D171 /* Pods-Ditte-AKLocationManager-Private.xcconfig */,
+				1AF7C60BA2854B03BD2860C4 /* Pods-Ditte-AKLocationManager-dummy.m */,
+				213FFE5B11CA4BE79AAB03C5 /* Pods-Ditte-AKLocationManager-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		7A66ECF835FF433FB0982F80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A7FF877DC2A4B1FBBCF1FBA /* DDContextFilterLogFormatter.h */,
+				0C716FFA9CF646DCAC6CC0BB /* DDContextFilterLogFormatter.m */,
+				AFC802D5D18F40A88077C20E /* DDDispatchQueueLogFormatter.h */,
+				41088870802D4200AC41E2FB /* DDDispatchQueueLogFormatter.m */,
+				68DC240D7D594FCF817A3C34 /* DDMultiFormatter.h */,
+				A166C8D0F1DD4FBA9A6F8AC3 /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		982639AAA1284F0C80FF8E3E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				48A9B6E120C4401EB427CD20 /* DDASLLogger.h */,
+				5CDC45189F1A49E1901A5BBB /* DDASLLogger.m */,
+				67AB2610538542B1B1A0875B /* DDAbstractDatabaseLogger.h */,
+				CCC7541722F04AF5B50E64B9 /* DDAbstractDatabaseLogger.m */,
+				325AABCAD6084CBA9CE0DEA2 /* DDFileLogger.h */,
+				ADF043F581C04982BE2D2306 /* DDFileLogger.m */,
+				7428E5BDD8FF40F8BC85B238 /* DDLog.h */,
+				D5DA532971E44858B6CF2025 /* DDLog.m */,
+				54024374974C4178891EEB0D /* DDLog+LOGV.h */,
+				15F0B6809246439FAF09FD8C /* DDTTYLogger.h */,
+				8664EF985DDA465D89C4B687 /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CF955945541C49259E8EFF1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28D84B317F44A05BD500DF4 /* Pods-Ditte-SVProgressHUD.xcconfig */,
+				F9C373998A264180B69925A1 /* Pods-Ditte-SVProgressHUD-Private.xcconfig */,
+				40D4A4390DB441E098FA935B /* Pods-Ditte-SVProgressHUD-dummy.m */,
+				CC6089B0D85244049429078F /* Pods-Ditte-SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		D8DC815C44A449F68A04A9CB /* Pods-Ditte */ = {
+			isa = PBXGroup;
+			children = (
+				593757B9B8474805AE117F67 /* Pods-Ditte.xcconfig */,
+				DDBF467FC7F54FA8BAAFD426 /* Pods-Ditte-acknowledgements.markdown */,
+				89049DB09B894966BE49D890 /* Pods-Ditte-acknowledgements.plist */,
+				081E058748E8484F895D8E19 /* Pods-Ditte-dummy.m */,
+				61D11DDD1C2A4DBFA74C4C33 /* Pods-Ditte-environment.h */,
+				5D2926B285754590A5F8BA87 /* Pods-Ditte-resources.sh */,
 			);
 			name = "Pods-Ditte";
 			sourceTree = "<group>";
 		};
-		F89B69C684384751BF22AD76 = {
+		DDFE4636DBE443208274388F = {
 			isa = PBXGroup;
 			children = (
-				421002BA3A07403F9B98A96E /* Podfile */,
-				B50B418B8F73435E88B94E9C /* Frameworks */,
-				0620D86205244D21AA687B62 /* Pods */,
-				B6F358F2FB294564B06CAB8F /* Products */,
-				360CA6C957BD49A78ECCEC42 /* Targets Support Files */,
+				E353171C15C24DB6BF11256E /* Podfile */,
+				41A0C0CE54FD4A45A9BCC61C /* Frameworks */,
+				F93FE2EA9E884ED988EF884F /* Pods */,
+				1255DBCE8A3F4B75A5AD5444 /* Products */,
+				1D97F3CE70A74A7193515DA6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		F93FE2EA9E884ED988EF884F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				042CF44BD4DD4972B1770F71 /* AGAssert */,
+				14111226616D42F8ABEDEF74 /* AKLocationManager */,
+				379CC92BA1134DD88140CEE0 /* CocoaLumberjack */,
+				51DFB8A4C77C41799DF43029 /* SVProgressHUD */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		33D152D41D1748EF8E3E3695 /* Headers */ = {
+		1A4D2D8277184AE5AD5CE1CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A20974374C4A36832E259B /* DDASLLogger.h in Headers */,
-				191A0C25ACCD4A46A1F75918 /* DDAbstractDatabaseLogger.h in Headers */,
-				EB63A1943ABA406BA87D9E16 /* DDContextFilterLogFormatter.h in Headers */,
-				BF6BF198DEF5446DAD1E251C /* DDDispatchQueueLogFormatter.h in Headers */,
-				0B4ECC8EC54F4409931B3986 /* DDFileLogger.h in Headers */,
-				0FDE2F1E9C0342E9B28EBFF8 /* DDLog+LOGV.h in Headers */,
-				9C972DF2A3604666934A9ABF /* DDLog.h in Headers */,
-				7456AEF89DF64B738B73F7DA /* DDMultiFormatter.h in Headers */,
-				565EADE6915944B19AE27950 /* DDTTYLogger.h in Headers */,
+				EF8EE23354674398B3CBAD47 /* AGAssert.h in Headers */,
+				D64C1F3C2464478F95CD6AAC /* AGAssertionHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3618BAA2EF354F2FAB78A10F /* Headers */ = {
+		24760EF270C0487EB76B7194 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C195792E81EC43ABB0223A29 /* AGAssert.h in Headers */,
-				13F9879532394DE9BEFE5DA8 /* AGAssertionHandler.h in Headers */,
+				8B5B3FF107DF43FD97B22D5E /* AKLocationManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD43EA6053004594BD6417A4 /* Headers */ = {
+		8EDC2A0D91B9484184CB9D7E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C61F82C89448D98D711E03 /* AKLocationManager.h in Headers */,
+				7C68456AE2FB4987ABF21E76 /* DDASLLogger.h in Headers */,
+				697CF366C60942B49E2A0328 /* DDAbstractDatabaseLogger.h in Headers */,
+				DCA1527435444C68A2F6847E /* DDContextFilterLogFormatter.h in Headers */,
+				8E17AF2A9E44493ABCBE9549 /* DDDispatchQueueLogFormatter.h in Headers */,
+				6BA07326E21443C8BB1B8C99 /* DDFileLogger.h in Headers */,
+				60B161D657E3424A8EFA4081 /* DDLog+LOGV.h in Headers */,
+				7393E5EFF64B4569AF477419 /* DDLog.h in Headers */,
+				2F39D4EA2A1442E1AFA6909E /* DDMultiFormatter.h in Headers */,
+				E9A7228CAC5D4773BD86F1BC /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F031CB6C6BB1477F86E1450B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4767ECE4821342C3848F569B /* SVProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1DDB7F7DC8D24E1A9FC6A4ED /* Pods-Ditte-AKLocationManager */ = {
+		02C2F82AB9A34430928968C5 /* Pods-Ditte-AKLocationManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDD5E49F2A8941458CAE043A /* Build configuration list for PBXNativeTarget "Pods-Ditte-AKLocationManager" */;
+			buildConfigurationList = D9F468B9447C4D0381102AC4 /* Build configuration list for PBXNativeTarget "Pods-Ditte-AKLocationManager" */;
 			buildPhases = (
-				EC94BBB1806442058A88E2B6 /* Sources */,
-				5F00F3C6FDD24AA096AB7A67 /* Frameworks */,
-				BD43EA6053004594BD6417A4 /* Headers */,
+				4D99F28B15DB4B85AF260795 /* Sources */,
+				8A7DEB1A2B974E2E8BFEC45F /* Frameworks */,
+				24760EF270C0487EB76B7194 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -381,16 +455,33 @@
 			);
 			name = "Pods-Ditte-AKLocationManager";
 			productName = "Pods-Ditte-AKLocationManager";
-			productReference = C38DF4A0722243D39502E0D9 /* libPods-Ditte-AKLocationManager.a */;
+			productReference = 70FE68918B5942FFBF318C66 /* libPods-Ditte-AKLocationManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		442BFE117D5146DCA05A5BE3 /* Pods-Ditte-AGAssert */ = {
+		7818C7504602437198AB7A7E /* Pods-Ditte-SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BAB2C94F03C4C7ABE0563AE /* Build configuration list for PBXNativeTarget "Pods-Ditte-AGAssert" */;
+			buildConfigurationList = E97D5594FD344DD98C055E58 /* Build configuration list for PBXNativeTarget "Pods-Ditte-SVProgressHUD" */;
 			buildPhases = (
-				143C13C0EEF54A4E8B7EBF6D /* Sources */,
-				7AF8D12D3E004B50A088105B /* Frameworks */,
-				3618BAA2EF354F2FAB78A10F /* Headers */,
+				0061AAC3C01345FDA22FDB2A /* Sources */,
+				9A12047C89C94397A6ECF294 /* Frameworks */,
+				F031CB6C6BB1477F86E1450B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Ditte-SVProgressHUD";
+			productName = "Pods-Ditte-SVProgressHUD";
+			productReference = 9EF2DD5FB599494F9D2D8784 /* libPods-Ditte-SVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7F47962F02344E4291D45640 /* Pods-Ditte-AGAssert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D6968D2E7A485FAD7F88FE /* Build configuration list for PBXNativeTarget "Pods-Ditte-AGAssert" */;
+			buildPhases = (
+				36751E18D5154F6AA7819D4C /* Sources */,
+				A7A6DBF364FF4C11AC5002A6 /* Frameworks */,
+				1A4D2D8277184AE5AD5CE1CE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -398,35 +489,16 @@
 			);
 			name = "Pods-Ditte-AGAssert";
 			productName = "Pods-Ditte-AGAssert";
-			productReference = DAE0DE4ACA5B442A94C1187A /* libPods-Ditte-AGAssert.a */;
+			productReference = ADF265075EB54735AA8D5D0A /* libPods-Ditte-AGAssert.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A67B34D038014B22A3DE9C09 /* Pods-Ditte */ = {
+		8470BB675C284E6AB36677A9 /* Pods-Ditte-CocoaLumberjack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BAD3DF136A8413CA74EBE30 /* Build configuration list for PBXNativeTarget "Pods-Ditte" */;
+			buildConfigurationList = 4B30AAD20CA04523B2212268 /* Build configuration list for PBXNativeTarget "Pods-Ditte-CocoaLumberjack" */;
 			buildPhases = (
-				D3EB74D860E547F8A1FBF764 /* Sources */,
-				1C92A79797834ED19F56F956 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				90F92BA593D44D039E4361D7 /* PBXTargetDependency */,
-				0CC477C6C8234BAFB527B3F2 /* PBXTargetDependency */,
-				43787F277DCF4728819C2291 /* PBXTargetDependency */,
-			);
-			name = "Pods-Ditte";
-			productName = "Pods-Ditte";
-			productReference = 69D17BA10A8442178E61E0B0 /* libPods-Ditte.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DA9791D9FE804AEB943F9B02 /* Pods-Ditte-CocoaLumberjack */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF397B6CB0024041AFB6DF64 /* Build configuration list for PBXNativeTarget "Pods-Ditte-CocoaLumberjack" */;
-			buildPhases = (
-				9EF30857D55645D798F6ED62 /* Sources */,
-				E2010F02BBC345FABA875C32 /* Frameworks */,
-				33D152D41D1748EF8E3E3695 /* Headers */,
+				5B9393D2B585471583EBE7B6 /* Sources */,
+				5AEDF4E0668449439962BECC /* Frameworks */,
+				8EDC2A0D91B9484184CB9D7E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -434,105 +506,258 @@
 			);
 			name = "Pods-Ditte-CocoaLumberjack";
 			productName = "Pods-Ditte-CocoaLumberjack";
-			productReference = B47D7F8423C7460886F074D2 /* libPods-Ditte-CocoaLumberjack.a */;
+			productReference = E453F2934B0340E0BC5F1FFF /* libPods-Ditte-CocoaLumberjack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB7B0F777C9349E39286891A /* Pods-Ditte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCADF46E065443BA11B440F /* Build configuration list for PBXNativeTarget "Pods-Ditte" */;
+			buildPhases = (
+				79D3E924E30B46C3A9C9620E /* Sources */,
+				41AC8214EF4A4E10988BE73E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9119FC5430074C45AA0DB069 /* PBXTargetDependency */,
+				F2C0721C5B174A65868F9F61 /* PBXTargetDependency */,
+				83ABC72BF57D495583CF936A /* PBXTargetDependency */,
+				D5E5F5D34FB54ED48B2A3272 /* PBXTargetDependency */,
+			);
+			name = "Pods-Ditte";
+			productName = "Pods-Ditte";
+			productReference = 5332B455980044A5BAF547CC /* libPods-Ditte.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D8DA909306344F189CFE95CC /* Project object */ = {
+		C761CEC8B6954970AA17D90F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = EAFF8183929043D1BC9192D0 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F6D47AFA664349779270B644 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F89B69C684384751BF22AD76;
-			productRefGroup = B6F358F2FB294564B06CAB8F /* Products */;
+			mainGroup = DDFE4636DBE443208274388F;
+			productRefGroup = 1255DBCE8A3F4B75A5AD5444 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 			);
 			projectRoot = "";
 			targets = (
-				A67B34D038014B22A3DE9C09 /* Pods-Ditte */,
-				442BFE117D5146DCA05A5BE3 /* Pods-Ditte-AGAssert */,
-				1DDB7F7DC8D24E1A9FC6A4ED /* Pods-Ditte-AKLocationManager */,
-				DA9791D9FE804AEB943F9B02 /* Pods-Ditte-CocoaLumberjack */,
+				CB7B0F777C9349E39286891A /* Pods-Ditte */,
+				7F47962F02344E4291D45640 /* Pods-Ditte-AGAssert */,
+				02C2F82AB9A34430928968C5 /* Pods-Ditte-AKLocationManager */,
+				8470BB675C284E6AB36677A9 /* Pods-Ditte-CocoaLumberjack */,
+				7818C7504602437198AB7A7E /* Pods-Ditte-SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		143C13C0EEF54A4E8B7EBF6D /* Sources */ = {
+		0061AAC3C01345FDA22FDB2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12169F53E5F64404A4B1FFA7 /* AGAssert.m in Sources */,
-				94CDE96DDCD347A7A62DEEC7 /* AGAssertionHandler.m in Sources */,
-				830A343BF87F4E8298D938FB /* Pods-Ditte-AGAssert-dummy.m in Sources */,
+				53F1EBA824034E35AEEFD723 /* Pods-Ditte-SVProgressHUD-dummy.m in Sources */,
+				FB40BD80DFE34574855AF1B5 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EF30857D55645D798F6ED62 /* Sources */ = {
+		36751E18D5154F6AA7819D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A269DE8B3D4DC08F10D920 /* DDASLLogger.m in Sources */,
-				6075D2F0754B46A495EFDC9D /* DDAbstractDatabaseLogger.m in Sources */,
-				DA3C804D339D41BCAE1EED54 /* DDContextFilterLogFormatter.m in Sources */,
-				D63F485BA3FA484F8C29DA71 /* DDDispatchQueueLogFormatter.m in Sources */,
-				1B6BBE35E3714D86896D6DD5 /* DDFileLogger.m in Sources */,
-				E9BAD672269C4A4D95DFC9B2 /* DDLog.m in Sources */,
-				BA46C43DB7564490A71E5D8D /* DDMultiFormatter.m in Sources */,
-				E099F9C345C14D34BC9C82B6 /* DDTTYLogger.m in Sources */,
-				1904935CADED4A7997B9D7E6 /* Pods-Ditte-CocoaLumberjack-dummy.m in Sources */,
+				301DFD13113B4A5F9DA59253 /* AGAssert.m in Sources */,
+				E8D6AFCE5A6F43AC91BA4494 /* AGAssertionHandler.m in Sources */,
+				EDCD3B5EFD9046DD907568E9 /* Pods-Ditte-AGAssert-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3EB74D860E547F8A1FBF764 /* Sources */ = {
+		4D99F28B15DB4B85AF260795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0326658209406FA5CB615D /* Pods-Ditte-dummy.m in Sources */,
+				2F6B7D5817D948B9BD390425 /* AKLocationManager.m in Sources */,
+				18073915370D4F53B6DF53CC /* Pods-Ditte-AKLocationManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC94BBB1806442058A88E2B6 /* Sources */ = {
+		5B9393D2B585471583EBE7B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79FD68D41494715AEFAA166 /* AKLocationManager.m in Sources */,
-				AFCC1BCA654448BEB84DB55A /* Pods-Ditte-AKLocationManager-dummy.m in Sources */,
+				003206C455594642846A3677 /* DDASLLogger.m in Sources */,
+				EC62F64A214D4AB1A53D88B9 /* DDAbstractDatabaseLogger.m in Sources */,
+				B225C60FD42441098B0E97E6 /* DDContextFilterLogFormatter.m in Sources */,
+				751E11C9D8F14FA892AF3992 /* DDDispatchQueueLogFormatter.m in Sources */,
+				E3DBCE9F6CD7499CB2AABEEC /* DDFileLogger.m in Sources */,
+				113A1B0B8992427C906F3631 /* DDLog.m in Sources */,
+				1AAB043D146149FCA00C75AC /* DDMultiFormatter.m in Sources */,
+				F1676272DCB44768B87C4247 /* DDTTYLogger.m in Sources */,
+				34A1012022264EBCB142DCF8 /* Pods-Ditte-CocoaLumberjack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D3E924E30B46C3A9C9620E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A85409E3044438BA7BB68E0 /* Pods-Ditte-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CC477C6C8234BAFB527B3F2 /* PBXTargetDependency */ = {
+		83ABC72BF57D495583CF936A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1DDB7F7DC8D24E1A9FC6A4ED /* Pods-Ditte-AKLocationManager */;
-			targetProxy = B00961EAAA1B4A65AC7815A0 /* PBXContainerItemProxy */;
+			target = 8470BB675C284E6AB36677A9 /* Pods-Ditte-CocoaLumberjack */;
+			targetProxy = 7FB200A8E8884C5BA3534880 /* PBXContainerItemProxy */;
 		};
-		43787F277DCF4728819C2291 /* PBXTargetDependency */ = {
+		9119FC5430074C45AA0DB069 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9791D9FE804AEB943F9B02 /* Pods-Ditte-CocoaLumberjack */;
-			targetProxy = F9DDD7FBDFA24A67AD95312A /* PBXContainerItemProxy */;
+			target = 7F47962F02344E4291D45640 /* Pods-Ditte-AGAssert */;
+			targetProxy = 4B87648FE13E4905B4EB2F62 /* PBXContainerItemProxy */;
 		};
-		90F92BA593D44D039E4361D7 /* PBXTargetDependency */ = {
+		D5E5F5D34FB54ED48B2A3272 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 442BFE117D5146DCA05A5BE3 /* Pods-Ditte-AGAssert */;
-			targetProxy = 407AD610E1B24209B4B22FC7 /* PBXContainerItemProxy */;
+			target = 7818C7504602437198AB7A7E /* Pods-Ditte-SVProgressHUD */;
+			targetProxy = 1D880644D6904D3BBE7B4460 /* PBXContainerItemProxy */;
+		};
+		F2C0721C5B174A65868F9F61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C2F82AB9A34430928968C5 /* Pods-Ditte-AKLocationManager */;
+			targetProxy = 0014F318E1BF4005A840966D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1775C76D282543DA9DB50CB1 /* Debug */ = {
+		02CCB88144A440E8B1E20319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C373998A264180B69925A1 /* Pods-Ditte-SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Ditte-SVProgressHUD-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2294CB9B80A14A5F82887B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9833B2AD1B949A7B218D171 /* Pods-Ditte-AKLocationManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Ditte-AKLocationManager-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409C2C18D9C14741B4088D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9833B2AD1B949A7B218D171 /* Pods-Ditte-AKLocationManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Ditte-AKLocationManager-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8133E0F8E90F4530A0555CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A49A5B6F9B145A78B6B9D31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -568,64 +793,9 @@
 			};
 			name = Debug;
 		};
-		1A7F4238538A4674A7394D8A /* Debug */ = {
+		9EF13D0D92284FEEA17AFAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61181751D62148568F708669 /* Pods-Ditte-AGAssert-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Ditte-AGAssert-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1B7782F2BC164A90810DF7D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39AC8574B37F4C659D7C2112 /* Pods-Ditte.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		23DF29EFF3C24D0382A7A931 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB6DE07A26645DFB6B6744A /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */;
+			baseConfigurationReference = FFB4166768E74637AC7E2B96 /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -653,65 +823,9 @@
 			};
 			name = Release;
 		};
-		243B45196E074B58B90215F6 /* Debug */ = {
+		AC2083D8E5D34608AFC65224 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8862D26801FC4F97A3283BB9 /* Pods-Ditte-AKLocationManager-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Ditte-AKLocationManager-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4BA44DB422C04485ABB32700 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB6DE07A26645DFB6B6744A /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Ditte-CocoaLumberjack-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		570F3C989FD74E12B0DCE4A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39AC8574B37F4C659D7C2112 /* Pods-Ditte.xcconfig */;
+			baseConfigurationReference = 593757B9B8474805AE117F67 /* Pods-Ditte.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -738,69 +852,92 @@
 			};
 			name = Release;
 		};
-		9D74E767BE8B4B71A8BD825A /* Release */ = {
+		B34D8F54C707415CBFDA98F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8862D26801FC4F97A3283BB9 /* Pods-Ditte-AKLocationManager-Private.xcconfig */;
+			baseConfigurationReference = F9C373998A264180B69925A1 /* Pods-Ditte-SVProgressHUD-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-Ditte-AKLocationManager-prefix.pch";
+				GCC_PREFIX_HEADER = "Pods-Ditte-SVProgressHUD-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		A79F59B386BB4446987BA11B /* Release */ = {
+		B622939353FE4AAEBC44D115 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593757B9B8474805AE117F67 /* Pods-Ditte.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		AB5F3B47433A45C7904362CA /* Release */ = {
+		C2FF73FC784240878B5B3D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61181751D62148568F708669 /* Pods-Ditte-AGAssert-Private.xcconfig */;
+			baseConfigurationReference = 142EB86E3DEC4E9E9AB7E313 /* Pods-Ditte-AGAssert-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Ditte-AGAssert-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D126233822FF4650BD8369A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142EB86E3DEC4E9E9AB7E313 /* Pods-Ditte-AGAssert-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -827,56 +964,93 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		DBD1D6F5795A403F84F3A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB4166768E74637AC7E2B96 /* Pods-Ditte-CocoaLumberjack-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Ditte-CocoaLumberjack-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BAB2C94F03C4C7ABE0563AE /* Build configuration list for PBXNativeTarget "Pods-Ditte-AGAssert" */ = {
+		4B30AAD20CA04523B2212268 /* Build configuration list for PBXNativeTarget "Pods-Ditte-CocoaLumberjack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A7F4238538A4674A7394D8A /* Debug */,
-				AB5F3B47433A45C7904362CA /* Release */,
+				DBD1D6F5795A403F84F3A249 /* Debug */,
+				9EF13D0D92284FEEA17AFAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BAD3DF136A8413CA74EBE30 /* Build configuration list for PBXNativeTarget "Pods-Ditte" */ = {
+		8FCADF46E065443BA11B440F /* Build configuration list for PBXNativeTarget "Pods-Ditte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B7782F2BC164A90810DF7D2 /* Debug */,
-				570F3C989FD74E12B0DCE4A2 /* Release */,
+				B622939353FE4AAEBC44D115 /* Debug */,
+				AC2083D8E5D34608AFC65224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDD5E49F2A8941458CAE043A /* Build configuration list for PBXNativeTarget "Pods-Ditte-AKLocationManager" */ = {
+		D9F468B9447C4D0381102AC4 /* Build configuration list for PBXNativeTarget "Pods-Ditte-AKLocationManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				243B45196E074B58B90215F6 /* Debug */,
-				9D74E767BE8B4B71A8BD825A /* Release */,
+				409C2C18D9C14741B4088D00 /* Debug */,
+				2294CB9B80A14A5F82887B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF397B6CB0024041AFB6DF64 /* Build configuration list for PBXNativeTarget "Pods-Ditte-CocoaLumberjack" */ = {
+		E97D5594FD344DD98C055E58 /* Build configuration list for PBXNativeTarget "Pods-Ditte-SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BA44DB422C04485ABB32700 /* Debug */,
-				23DF29EFF3C24D0382A7A931 /* Release */,
+				B34D8F54C707415CBFDA98F6 /* Debug */,
+				02CCB88144A440E8B1E20319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAFF8183929043D1BC9192D0 /* Build configuration list for PBXProject "Pods" */ = {
+		F4D6968D2E7A485FAD7F88FE /* Build configuration list for PBXNativeTarget "Pods-Ditte-AGAssert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1775C76D282543DA9DB50CB1 /* Debug */,
-				A79F59B386BB4446987BA11B /* Release */,
+				C2FF73FC784240878B5B3D5E /* Debug */,
+				D126233822FF4650BD8369A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D47AFA664349779270B644 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A49A5B6F9B145A78B6B9D31 /* Debug */,
+				8133E0F8E90F4530A0555CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D8DA909306344F189CFE95CC /* Project object */;
+	rootObject = C761CEC8B6954970AA17D90F /* Project object */;
 }

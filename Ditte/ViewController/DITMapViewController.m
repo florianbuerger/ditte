@@ -7,7 +7,9 @@
 //
 
 #import "DITMapViewController.h"
+#import "DITTwitterSearcher.h"
 #import <AKLocationManager/AKLocationManager.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 
 @interface DITMapViewController () <MKMapViewDelegate, UITextFieldDelegate>
@@ -17,16 +19,15 @@
 
 @implementation DITMapViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setUpUserInterface];
-    
+
     [AKLocationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
     [AKLocationManager startLocatingWithUpdateBlock:^(CLLocation *location) {
         [self zoomToLocation:location];
-    } failedBlock:^(NSError *error) {
+    }                                   failedBlock:^(NSError *error) {
         if (error) {
             DDLogError(@"Unable to start location updates. %@", error);
         }
@@ -39,13 +40,37 @@
     region.span = MKCoordinateSpanMake(location.horizontalAccuracy / 111, location.verticalAccuracy / 111);
     region = [self.mapView regionThatFits:region];
     [self.mapView setRegion:region animated:YES];
-    
+
     DDLogVerbose(@"Zooming to location %@", location);
 }
 
 #pragma mark - UITextFieldDelegate
 
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    BOOL isValid = [self validateInputInTextField:textField];
+    [textField resignFirstResponder];
+    if (isValid) {
+        [self handOffSearch:textField.text];
+    }
+}
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    BOOL isValid = [self validateInputInTextField:textField];
+    [textField resignFirstResponder];
+    if (isValid) {
+        [self handOffSearch:textField.text];
+    }
+    return isValid;
+}
+
+- (BOOL)validateInputInTextField:(UITextField *)textField {
+    NSString *searchTerm = textField.text;
+    if (searchTerm.length <= 2) {
+        DDLogWarn(@"The user should enter a search term that is longer than 2 characters.");
+        return NO;
+    }
+    return YES;
+}
 
 #pragma mark - MKMapViewDelegate
 
@@ -61,18 +86,33 @@
     DDLogVerbose(@"MapView %@ mapViewDidFailLoadingMap", mapView);
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    return nil;
+}
+
 #pragma mark - Setup
+
+- (void)handOffSearch:(NSString *)searchTerm {
+    [SVProgressHUD showWithStatus:@"Searching…" maskType:SVProgressHUDMaskTypeClear];
+    // [[DITTwitterSearcher sharedSearcher] askTwitterAPIWithSearchTerm:searchTerm];
+    [SVProgressHUD popActivity];
+}
 
 - (void)setUpUserInterface {
     CGFloat inset = 8.0f;
-    CGRect fieldFrame = { {inset, 20.0f}, {CGRectGetWidth(self.view.bounds) - 2 * inset, 37.0f}};
+    CGRect fieldFrame = {{inset, 20.0f}, {CGRectGetWidth(self.view.bounds) - 2 * inset, 37.0f}};
     fieldFrame = CGRectInset(fieldFrame, inset, 0);
     UITextField *searchField = [[UITextField alloc] initWithFrame:fieldFrame];
     searchField.delegate = self;
+    searchField.returnKeyType = UIReturnKeySearch;
+    searchField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    searchField.autocorrectionType = UITextAutocorrectionTypeNo;
+    searchField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    searchField.placeholder = NSLocalizedString(@"Enter your search term...", @"Enter your search term...");
     [self.view addSubview:searchField];
     self.searchField = searchField;
-    
-    CGRect mapViewFrame = { {0, CGRectGetMaxY(fieldFrame)}, {CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - CGRectGetHeight(fieldFrame)} };
+
+    CGRect mapViewFrame = {{0, CGRectGetMaxY(fieldFrame)}, {CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - CGRectGetHeight(fieldFrame)}};
     MKMapView *mapView = [[MKMapView alloc] initWithFrame:mapViewFrame];
     mapView.delegate = self;
     mapView.showsUserLocation = YES;

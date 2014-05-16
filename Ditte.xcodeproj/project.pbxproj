@@ -16,6 +16,7 @@
 		17362DA4192617AC0000A968 /* DITMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DA3192617AC0000A968 /* DITMapViewController.m */; };
 		17362DAD19262B530000A968 /* DITTwitterSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DAC19262B530000A968 /* DITTwitterSearcher.m */; };
 		17362DB119262BB20000A968 /* DITTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17362DB019262BB20000A968 /* DITTweet.m */; };
+		359135A33477848B42A60956 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3591302DB7E393011517ABF4 /* Localizable.strings */; };
 		C097EBEFE4134398A99328CE /* libPods-Ditte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ACE95692C44100B8CF8104 /* libPods-Ditte.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		17362DAC19262B530000A968 /* DITTwitterSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTwitterSearcher.m; path = Model/DITTwitterSearcher.m; sourceTree = "<group>"; };
 		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
 		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
+		3591302DB7E393011517ABF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ViewController/Localizable.strings; sourceTree = "<group>"; };
 		6B62491221BE4591AC40D7CB /* Pods-Ditte.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ditte.xcconfig"; path = "Pods/Pods-Ditte.xcconfig"; sourceTree = "<group>"; };
 		99ACE95692C44100B8CF8104 /* libPods-Ditte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ditte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				17362DAE19262BA50000A968 /* Model */,
 				17362D85192616CE0000A968 /* Images.xcassets */,
 				17362D7A192616CE0000A968 /* Supporting Files */,
+				3591302DB7E393011517ABF4 /* Localizable.strings */,
 			);
 			path = Ditte;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				17362D7E192616CE0000A968 /* InfoPlist.strings in Resources */,
 				17362D86192616CE0000A968 /* Images.xcassets in Resources */,
+				359135A33477848B42A60956 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

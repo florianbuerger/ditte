@@ -6,15 +6,18 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - SVProgressHUD (1.0)
 
 DEPENDENCIES:
   - AGAssert (~> 0.1)
   - AKLocationManager (~> 1.0.3)
-  - CocoaLumberjack (= 1.8.1)
+  - CocoaLumberjack (~> 1.8.1)
+  - SVProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AGAssert: 009e14013755e38b604cd99e45f193f735c8c5c8
   AKLocationManager: c2c1c8eecd37c2b9193cb7803db999bcc518315c
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
 
 COCOAPODS: 0.32.1

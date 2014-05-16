@@ -10,6 +10,7 @@
 
 @implementation DITTweet
 
+
 - (CLLocationCoordinate2D)coordinate {
     return self.location.coordinate;
 }
@@ -20,6 +21,21 @@
 
 - (NSString *)subtitle {
     return self.username;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"[%@: {location = %@}]", self.class, self.location];
+}
+
++ (instancetype)tweetFromDictionary:(NSDictionary *)tweetDictionary {
+    DITTweet *tweet = [DITTweet new];
+
+    NSDictionary *coordinateDictionary = tweetDictionary[@"coordinates"];
+    NSArray *coordinates = coordinateDictionary[@"coordinates"];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:[coordinates[0] doubleValue] longitude:[coordinates[1] doubleValue]];
+    tweet.location = location;
+
+    return tweet;
 }
 
 @end

@@ -17,4 +17,6 @@
 @property(nonatomic, copy, readonly) NSString *userFirstName;
 @property(nonatomic, copy, readonly) NSString *userLastName;
 
++ (instancetype)tweetFromDictionary:(NSDictionary *)tweetDictionary;
+
 @end

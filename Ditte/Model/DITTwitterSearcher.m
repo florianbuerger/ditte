@@ -9,6 +9,8 @@
 #import "DITTwitterSearcher.h"
 #import "DITTweet.h"
 #import "DITProfileImageFetcherRequester.h"
+#import "DITTweetAnnotation.h"
+#import "DITTweetCluster.h"
 #import <objc-geohash/GeoHash.h>
 
 @import Social;
@@ -79,7 +81,7 @@
                 NSDictionary *data = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:&jsonError];
                 if (data) {
 
-                    NSMutableArray *tweets = [NSMutableArray array];
+                    NSMutableDictionary *tweets = [NSMutableDictionary dictionary];
                     NSArray *statuses = data[@"statuses"];
                     for (NSDictionary *statusDictionary in statuses) {
 
@@ -87,20 +89,28 @@
                         if (![coordinates isEqual:[NSNull null]]) {
                             DITTweet *tweet = [DITTweet tweetFromDictionary:statusDictionary];
 
-                            CLLocation *location = tweet.location;
-                            NSString *geoHash = [GeoHash hashForLatitude:location.coordinate.latitude
-                                                               longitude:location.coordinate.longitude
-                                                                  length:5];
-                            
-
                             [[DITProfileImageFetcherRequester sharedImageFetcherRequester] fetchProfileImage:tweet];
-                            [tweets addObject:tweet];
+
+                            id<DITTweetAnnotation> annotation = tweets[tweet.geoHash];
+                            DDLogVerbose(@"geohash: %@", tweet.geoHash);
+                            if ([annotation isEqual:[NSNull null]]) { // none in the list, just add the DITTweet
+                                [tweets setObject:tweet forKey:tweet.geoHash];
+                            } else { // already containing something for this geohash
+                                if ([annotation isKindOfClass:[DITTweet class]]) { // just one tweet, create a new cluster first
+                                    DITTweetCluster *cluster = [DITTweetCluster new];
+                                    [cluster addTweetToCluster:(DITTweet *)annotation];
+                                    [cluster addTweetToCluster:tweet];
+                                    [tweets setObject:cluster forKey:tweet.geoHash];
+                                } else if ([annotation isKindOfClass:[DITTweetCluster class]]) { // already a cluster, add the current tweet
+                                    [(DITTweetCluster *)annotation addTweetToCluster:tweet];
+                                }
+                            }
                         }
                     }
 
                     if (completionHandler) {
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            completionHandler(tweets);
+                            completionHandler([tweets allValues]);
                         });
                     }
 

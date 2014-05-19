@@ -52,6 +52,7 @@
 		17362DAC19262B530000A968 /* DITTwitterSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTwitterSearcher.m; path = Model/DITTwitterSearcher.m; sourceTree = "<group>"; };
 		17362DAF19262BB20000A968 /* DITTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTweet.h; sourceTree = "<group>"; };
 		17362DB019262BB20000A968 /* DITTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTweet.m; sourceTree = "<group>"; };
+		238F709B1C681C8EBF2E5889 /* DITTweetAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITTweetAnnotation.h; path = Model/DITTweetAnnotation.h; sourceTree = "<group>"; };
 		3591301D3ED87CADD9FF3052 /* DITTweetCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DITTweetCluster.h; path = ViewController/DITTweetCluster.h; sourceTree = "<group>"; };
 		3591302DB7E393011517ABF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ViewController/Localizable.strings; sourceTree = "<group>"; };
 		359131396455449584D1A063 /* DITTweetCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DITTweetCluster.m; path = ViewController/DITTweetCluster.m; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 				359138140B3DA4F86899035C /* DITProfileImageFetcherRequester.h */,
 				359131396455449584D1A063 /* DITTweetCluster.m */,
 				3591301D3ED87CADD9FF3052 /* DITTweetCluster.h */,
+				238F709B1C681C8EBF2E5889 /* DITTweetAnnotation.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -8,7 +8,9 @@
 @class DITTweet;
 @import MapKit;
 
-@interface DITTweetCluster : NSObject <MKAnnotation>
+#import "DITTweetAnnotation.h"
+
+@interface DITTweetCluster : NSObject <DITTweetAnnotation>
 
 - (void)addTweetToCluster:(DITTweet *)tweet;
 

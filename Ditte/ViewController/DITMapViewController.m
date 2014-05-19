@@ -124,6 +124,7 @@ static NSString *const DITAnnotationViewIdentifier = @"DITTweetAnnotationViewIde
     [SVProgressHUD showWithStatus:@"Searching…" maskType:SVProgressHUDMaskTypeClear];
     [[DITTwitterSearcher sharedSearcher] askTwitterAPIWithSearchTerm:searchTerm completion:^(NSArray *tweets) {
         [SVProgressHUD popActivity];
+        DDLogVerbose(@"found tweets: %@", tweets);
         [self.mapView addAnnotations:tweets];
     } error:^(NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"IT FAILED"];

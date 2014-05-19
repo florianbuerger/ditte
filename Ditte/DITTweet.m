@@ -7,12 +7,14 @@
 //
 
 #import "DITTweet.h"
+#import <objc-geohash/GeoHash.h>
 
 @interface DITTweet ()
 
 @property(nonatomic, copy, readwrite) NSString *username;
 @property (nonatomic, copy, readwrite) NSString *userFullName;
 @property (nonatomic, copy, readwrite) CLLocation *location;
+@property (nonatomic, copy, readwrite) NSString *geoHash;
 @property (nonatomic, copy, readwrite) NSURL *profileImageURL;
 
 @end
@@ -49,6 +51,11 @@
     NSArray *coordinates = coordinateDictionary[@"coordinates"];
     CLLocation *location = [[CLLocation alloc] initWithLatitude:[coordinates[1] doubleValue] longitude:[coordinates[0] doubleValue]];
     tweet.location = location;
+
+    NSString *geoHash = [GeoHash hashForLatitude:location.coordinate.latitude
+                                       longitude:location.coordinate.longitude
+                                          length:12];
+    tweet.geoHash = geoHash;
 
     return tweet;
 }

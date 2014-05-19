@@ -19,6 +19,7 @@
     if (self) {
         _tweets = [[NSMutableArray alloc] init];
     }
+    return self;
 }
 
 - (CLLocationCoordinate2D)coordinate {
@@ -27,12 +28,15 @@
 }
 
 - (NSString *)title {
-    return [NSString stringWithFormat:@"%d People tweeted here", self.tweets.count];
+    return [NSString stringWithFormat:@"%ld People tweeted here", (long)self.tweets.count];
 }
 
 - (void)addTweetToCluster:(DITTweet *)tweet {
     [self.tweets addObject:tweet];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"[%@: {tweets = %@}]", self.class, self.tweets];
+}
 
 @end

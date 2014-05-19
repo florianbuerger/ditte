@@ -10,9 +10,12 @@
 
 @import MapKit;
 
-@interface DITTweet : NSObject <MKAnnotation>
+#import "DITTweetAnnotation.h"
+
+@interface DITTweet : NSObject <DITTweetAnnotation>
 
 @property(nonatomic, copy, readonly) CLLocation *location;
+@property (nonatomic, copy, readonly) NSString *geoHash;
 @property(nonatomic, copy, readonly) NSString *username;
 @property(nonatomic, copy, readonly) NSString *userFirstName;
 @property(nonatomic, copy, readonly) NSString *userLastName;
